@@ -3,7 +3,7 @@
  */
 window.onload = function () {
 
-    const txt = '如果你吃一坨屎，可以救我一命，你愿意吗？<br />...............<br />我能吃你个一生平安';
+    const txt = '我希望有个如你一般的人。<br />如这山间清晨一般明亮清爽的人，<br /> 如奔赴古城道路上阳光一般的人，<br />温暖而不炙热，覆盖我所有肌肤。 <br />由起点到夜晚，由山野到书房， <br />一切问题的答案都很简单。 <br />我希望有个如你一般的人，贯彻未来，数遍生命的公路牌。';
 
     const _Click = document.getElementById('Click');
     const _Content = document.getElementsByClassName('content')[0];
