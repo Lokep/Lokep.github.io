@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#Click{
+    position: fixed;
+    left: 0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin: auto;
+    width: 90%;
+    height: 7rem;
+    cursor: pointer;
+    -webkit-transition: opacity .7s;
+    -moz-transition: opacity .7s;
+    -ms-transition: opacity .7s;
+    -o-transition: opacity .7s;
+    transition: opacity .7s;
+    z-index: 111;
+    /*display: none;*/
+}
+
+#Click>*{
+    /*float: left;*/
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+#Click>img{
+    width: 4rem;
+}
+#Click>span{
+    font-size:1rem;
+    line-height: 200px;
+}
+
+
+.content{
+    -webkit-transition: opacity .7s;
+    -moz-transition: opacity .7s;
+    -ms-transition: opacity .7s;
+    -o-transition: opacity .7s;
+    transition: opacity .7s;
+    opacity: 0;
+    width: 100%;
+    height: 12rem;
+    margin: 1rem auto;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+/*.content>*{*/
+    /*float: left;*/
+    /*width: 50%;*/
+    /*height: 100%;*/
+/*}*/
+.content h1{
+    font-size: 0.5rem;
+    line-height: 1.5rem;
+    margin: 2.5rem auto;
+    width: 60%;
+    display: block;
+
+}
+
+
+
+#heart{
+    position: relative;
+    height: 100%;
+}
+#heart>img{
+    width: 0.4rem;
+    height: auto;
+    display: block;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    opacity: 1;
+}
+
+/*给气球左右摇摆的动画*/
+@keyframes Up_1 {
+    0%{left: 300px;bottom:0;opacity: 1;}
+    50%{left:150px;bottom:300px;opacity: .5;}
+    100%{left:450px;bottom:600px;opacity: 0;}
+}
+@keyframes Up_2 {
+    0%{left: 300px;bottom:0;opacity: 1;}
+    50%{left:120px;bottom:300px;opacity: .5;}
+    100%{left:480px;bottom:600px;opacity: 0;}
+}
+@keyframes Up_3 {
+    0%{left: 300px;bottom:0;opacity: 1;}
+    50%{left:180px;bottom:300px;opacity: .5;}
+    100%{left:420px;bottom:600px;opacity: 0;}
+}
+@keyframes Up_4 {
+    0%{left: 300px;bottom:0;opacity: 1;}
+    50%{left:200px;bottom:300px;opacity: .5;}
+    100%{left:400px;bottom:600px;opacity: 0;}
+}
+@keyframes Up_5 {
+    0%{left: 300px;bottom:0;opacity: 1;}
+    50%{left:450px;bottom:300px;opacity: .5;}
+    100%{left:150px;bottom:600px;opacity: 0;}
+}
+@keyframes Up_6 {
+    0%{left: 300px;bottom:0;opacity: 1;}
+    50%{left:480px;bottom:300px;opacity: .5;}
+    100%{left:120px;bottom:600px;opacity: 0;}
+}
+@keyframes Up_7 {
+    0%{left: 300px;bottom:0;opacity: 1;}
+    50%{left:420px;bottom:300px;opacity: .5;}
+    100%{left:180px;bottom:600px;opacity: 0;}
+}
+@keyframes Up_8 {
+    0%{left: 300px;bottom:0;opacity: 1;}
+    50%{left:400px;bottom:300px;opacity: .5;}
+    100%{left:200px;bottom:600px;opacity: 0;}
+}
+
+
+
+
+.love_1{
+    -webkit-animation:Up_1 4s ease-in 0s infinite normal;
+    -o-animation:Up_1 4s ease-in 0s infinite normal;
+    animation:Up_1 4s ease-in 0s infinite normal;
+}
+.love_2{
+    -webkit-animation:Up_2 4s ease-in 1s infinite normal;
+    -o-animation:Up_2 4s ease-in 1s infinite normal;
+    animation:Up_2 4s ease-in 1s infinite normal;
+}
+.love_3{
+    -webkit-animation:Up_3 4s ease-in 2s infinite normal;
+    -o-animation:Up_3 4s ease-in 2s infinite normal;
+    animation:Up_3 4s ease-in 2s infinite normal;
+}
+.love_4{
+    -webkit-animation:Up_4 4s ease-in 3s infinite normal;
+    -o-animation:Up_4 4s ease-in 3s infinite normal;
+    animation:Up_4 4s ease-in 3s infinite normal;
+}
+
+
+.love_5{
+    -webkit-animation:Up_5 4s ease-in 0s infinite normal;
+    -o-animation:Up_5 4s ease-in 0s infinite normal;
+    animation:Up_5 4s ease-in 0s infinite normal;
+}
+.love_6{
+    -webkit-animation:Up_6 4s ease-in 1s infinite normal;
+    -o-animation:Up_6 4s ease-in 1s infinite normal;
+    animation:Up_6 4s ease-in 1s infinite normal;
+}
+.love_7{
+    -webkit-animation:Up_7 4s ease-in 2s infinite normal;
+    -o-animation:Up_7 4s ease-in 2s infinite normal;
+    animation:Up_7 4s ease-in 2s infinite normal;
+}
+.love_8{
+    -webkit-animation:Up_8 4s ease-in 3s infinite normal;
+    -o-animation:Up_8 4s ease-in 3s infinite normal;
+    animation:Up_8 4s ease-in 3s infinite normal;
+}
