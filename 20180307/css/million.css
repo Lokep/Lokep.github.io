@@ -1,4 +1,4 @@
-*{
+﻿*{
     margin: 0;
     padding: 0;
 }
@@ -90,7 +90,7 @@ b{
     margin-right: 0.1rem;
 }
 .part_3_topTxt>span{
-    font-size: 24px;
+    font-size: 0.48rem;
     font-family: "PingFangSC";
     color: rgb(43, 43, 43);
     background-color: #ffd84b;
