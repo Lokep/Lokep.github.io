@@ -6,7 +6,8 @@ window.onload = function () {
     var bool = 1;
 
     window.onscroll = function () {
-        var sc = document.documentElement.scrollTop||document.body.scrollTop||window.pageYOffset;
+                var sc = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+
         (sc>=280)? new WordByWord('content',txt):'';
         (sc>=1000)? new RotatePic('part_3_leftPic','roll','part_3_rightTxt'):'';
 
