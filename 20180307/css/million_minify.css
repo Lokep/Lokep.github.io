@@ -1,0 +1,59 @@
+* {margin:0;padding:0;}
+html,body,.box {width:100%;height:auto;}
+.million {font-family:PingFangSC;}
+a {display:block;text-decoration:none;}
+img,span {display:block;border:none;}
+b {color:#000;}
+.m_header {width:100%;}
+.part_1 {width:100%;height:9.85rem;border-bottom:2px dashed #2b2b2b;}
+.part_1_title,.part_1_content {width:6.92rem;margin:0 auto;}
+.part_1_title {margin:.5rem auto 0;}
+.part_2 {width:100%;height:9.9rem;position:relative;border-bottom:2px dashed #2b2b2b;}
+.part_2>* {position:absolute;}
+.part_2_content {width:4.6rem;height:3.25rem;left:.3rem;top:1.2rem;font-size:.28rem;font-family:PingFangSC;line-height:1.679;z-index:111;font-weight:700;}
+.part_2_img {top:1.1rem;left:0;width:100%;z-index:110;}
+.part_3 {width:100%;height:7.6rem;border-bottom:2px dashed #2b2b2b;}
+.part_3_top {width:100%;overflow:hidden;margin:1rem auto .22rem;}
+.part_3_top>* {float:left;}
+.part_3_topImg {width:2.2rem;margin-right:.1rem;}
+.part_3_topTxt>span {font-size:.48rem;font-family:PingFangSC;color:#2b2b2b;background-color:#ffd84b;margin-bottom:.1rem;line-height:.66rem;max-width:4.95rem;letter-spacing:-1px;padding:0 .1rem;}
+.part_3_topTxt>span:nth-child(2) {width:3.45rem;}
+.part_3_topTxt>span:nth-child(3) {width:4.35rem;}
+.part_3_bottom {width:6.9rem;margin:0 auto;}
+.part_3_list {list-style:none;width:6.9rem;position:relative;height:1rem;overflow:hidden;margin-bottom:.2rem;}
+.part_3_leftPic {position:absolute;left:0;top:0;height:1rem;z-index:1111;}
+.part_3_rightTxt {position:absolute;left:-7.24rem;top:.3rem;width:100%;height:.7rem;background-image:url(../img/3up.png);background-size:94%;background-repeat:no-repeat;background-position:center right;z-index:111;font-size:.3rem;text-indent:4.5em;line-height:.7rem;color:#2b2b2b;font-family:PingFangSC;-webkit-transition:left .7s;-moz-transition:left .7s;-ms-transition:left .7s;-o-transition:left .7s;transition:left .7s;}
+.up {background-image:url(../img/3up1.png);}
+.up2 {background-image:url(../img/3up2.png);}
+.roll {-webkit-animation:Roll 1s ease 1 normal;-moz-animation:Roll 1s ease 1 normal;animation:Roll 1s ease 1 normal;}
+/*100% {transform:rotate(360deg);}*/
+.m_footer {width:100%;background-color:#dedcdc;padding:.75rem 0 .6rem;}
+.m_footer_title {width:6.92rem;height:1.9rem;background-image:url(../img/4title.png);background-repeat:no-repeat;background-size:contain;font-size:.42rem;text-align:center;line-height:2.2rem;margin:0 auto .55rem;}
+.m_footer_1 {height:.6rem;overflow:hidden;margin-left:.18rem;}
+.m_footer_1>span {float:left;text-align:center;font-weight:600;height:.6rem;line-height:.6rem;}
+.m_footer_1>span:nth-child(1) {background-color:#ffd84b;font-size:.36rem;color:#2b2b2b;padding:0 .13rem;}
+.m_footer_1>span:nth-child(2) {background-color:#fff;font-size:.3rem;color:#4e4e4e;padding:0 .16rem;}
+.m_footer_line {height:0;width:6.92rem;border:1px dashed #2f303c;margin:.45rem auto;}
+.m_footer_2 {width:1.5rem;background-color:#ffd84b;text-align:center;font-size:.36rem;margin-left:.18rem;font-weight:600;height:.6rem;line-height:.6rem;padding:0 .13rem;}
+.m_rule {font-size:.3rem;color:#4e4e4e;line-height:1.933;font-family:PingFangSC;margin:.2rem 0 .2rem .5rem;}
+.m_activity {font-size:.3rem;color:#4e4e4e;margin:.18rem 0 0 .18rem;}
+.m_right {background-color:#b5b5b5;width:100%;height:.62rem;line-height:.62rem;text-align:center;font-size:.18rem;font-family:PingFangSC;color:#767676;}
+.m_qr {width:100%;height:4rem;background-image:url(../img/code_bk.png);background-size:contain;}
+.m_qr_line {float:left;height:2.1rem;width:0;border:.5px solid #525252;margin-top:.9rem;}
+.m_qr_left {position:relative;width:calc(3.95rem - 3px);float:left;height:4rem;}
+.m_qr_right {width:3.55rem;float:left;}
+.m_bee {width:4.55rem;position:absolute;top:0;left:0;z-index:109;}
+.m_ad {position:absolute;bottom:.7rem;left:.85rem;z-index:110;width:2.3rem;}
+.m_qr_code {width:2.7rem;margin:.6rem auto 0;}
+@-webkit-keyframes Roll{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+@-moz-keyframes Roll{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+@keyframes Roll{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}

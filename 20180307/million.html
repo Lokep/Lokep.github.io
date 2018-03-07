@@ -8,7 +8,7 @@
     <meta content="telephone=no" name="format-detection">
     <meta content="email=no" name="format-detection">
     <title>亿蜂百万赢家</title>
-    <link rel="stylesheet" href="css/million.css">
+    <link rel="stylesheet" href="css/million_minify.css">
     <script src="js/font-size.js"></script>
 </head>
 <body>
@@ -121,6 +121,21 @@
 
 
     </div>
-<script src="js/million.js"></script>
+<script>
+    function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "js/million_minify.js";
+        document.body.appendChild(element);
+    }
+    if (window.addEventListener){
+        window.addEventListener("load", downloadJSAtOnload, false);
+    }
+    else if (window.attachEvent){
+        window.attachEvent("onload", downloadJSAtOnload);
+    }
+    else {
+        window.onload = downloadJSAtOnload;
+    }
+</script>
 </body>
 </html>
