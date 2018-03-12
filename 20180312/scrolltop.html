@@ -22,19 +22,20 @@
 
         window.onload = function () {
 
-//            window.onscroll = function () {
-//
-//                var sc = window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop;
-//                if(sc>=500){
-//                    alert('already get 500px');
-//                }
-//
-//
-//            }
+            window.onscroll = function () {
+
+                var sc = window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop;
+                if(sc>=500){
+                    alert('already get 500px');
+                }
+
+
+            };
 
             var txt = 'HAHAHA';
+            var test = document.getElementById('test');
             for(let i=0;i<5;i++){
-                document.write(txt);
+                test.innerText=txt;
             }
 
 
