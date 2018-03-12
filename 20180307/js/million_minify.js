@@ -28,7 +28,7 @@
         this.cls = document.getElementsByClassName(cls);
         this.sb = document.getElementsByClassName(sb);
         if (bool === 2) {
-            for (let i = 0; i < this.cls.length; i++) {
+            for (var i = 0; i < this.cls.length; i++) {
                 // setTimeout(function () {
                     _this.cls[i].classList.add(reCls);
                     _this.sb[i].style.left = '-0.24rem'
