@@ -17,9 +17,9 @@
 
 
 	<!--加载进度-->
-        <div class="firstLoad">
-            加载中...
-        </div>
+        <!--<div class="firstLoad">-->
+            <!--加载中...-->
+        <!--</div>-->
 
         <img src="img/0banner.png" class="m_header">
 
@@ -127,24 +127,24 @@
 
 
     </div>
-<script>
-    function downloadJSAtOnload() {
-        var element = document.createElement("script");
-        var firstLoad = document.getElementsByClassName('firstLoad')[0];
-        element.src = "js/million_minify.js";
-//        element.src = "js/million.js";
-        document.body.appendChild(element);
-        firstLoad.style.display='none';
-    }
-    if (window.addEventListener){
-        window.addEventListener("load", downloadJSAtOnload, false);
-    }
-    else if (window.attachEvent){
-        window.attachEvent("onload", downloadJSAtOnload);
-    }
-    else {
-        window.onload = downloadJSAtOnload;
-    }
+<script src="js/million_minify.js">
+//    function downloadJSAtOnload() {
+//        var element = document.createElement("script");
+//        var firstLoad = document.getElementsByClassName('firstLoad')[0];
+//        element.src = "js/million_minify.js";
+////        element.src = "js/million.js";
+//        document.body.appendChild(element);
+//        firstLoad.style.display='none';
+//    }
+//    if (window.addEventListener){
+//        window.addEventListener("load", downloadJSAtOnload, false);
+//    }
+//    else if (window.attachEvent){
+//        window.attachEvent("onload", downloadJSAtOnload);
+//    }
+//    else {
+//        window.onload = downloadJSAtOnload;
+//    }
 </script>
 </body>
 </html>
