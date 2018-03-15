@@ -38,7 +38,7 @@ a {text-decoration:none;display:block;color:#000;}
 .mobile_menu_orig {font-size:.18rem;color:#bf9f22;text-decoration:line-through;}
 .mobile_menu_now {font-size:.24rem;color:#bf9f22;}
 .mobile_menu_buy {font-size:.24rem;height:.6rem;line-height:.6rem;text-align:center;color:#fff;background-color:#bf9f22;}
-.mobile_single_more {width:2.83rem;height:1.53rem;background-image:url(../img/3morenormal.png);background-size:contain;line-height:2.15rem;text-indent:2em;color:#fff;font-size:.2rem;font-weight:700;margin:.4rem auto 0;}
+.mobile_single_more {width:2.83rem;height:1.53rem;background-image:url(../img/3morenormal.png);background-size:contain;line-height:2.13rem;text-indent:1.7em;color:#fff;font-size:.2rem;font-weight:700;margin:.4rem auto 0;}
 .mobile_need {height:6.9rem;width:100%;background-color:#00783c;overflow:hidden;}
 .mobile_need_content {width:6.9rem;height:auto;color:#fff;line-height:.4rem;font-size:.24rem;margin:.45rem auto 0;}
 .mobile_need_pic {width:6.9rem;margin:.4rem auto;}
