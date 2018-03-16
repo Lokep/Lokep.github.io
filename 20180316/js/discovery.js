@@ -76,11 +76,11 @@ window.onload=function () {
     };
 
 
-
-setTimeout(function(){  
-    document.body.scrollTop = document.body.scrollHeight;  
-},300); 
-
+thought.onfocus = function () {
+        setTimeout(function(){
+            document.body.scrollTop = document.body.scrollHeight;
+        },300);
+    };
 
 
 
