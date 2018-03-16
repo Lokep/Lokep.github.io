@@ -75,12 +75,11 @@ window.onload=function () {
 
     };
 
-    thought.onfocus = function () {
-        window.scrollTo(0,this.offsetTop+400);
-	alert(this.offsetTop+400);
-    }
 
 
+setTimeout(function(){  
+    document.body.scrollTop = document.body.scrollHeight;  
+},300); 
 
 
 
