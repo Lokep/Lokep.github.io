@@ -24,11 +24,7 @@ img,span,a,input,h2,h3,h4,textarea{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-appearance: none;
     border: none;
-    outline: 0;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    outline: none;
 }
 a{
     text-decoration: none;
@@ -89,18 +85,20 @@ b{
     border: 1px solid transparent;
 }
 .dis_table_info>span{
-    margin: 0 0.3rem;
+    margin:0.25rem 0 0 0.3rem;
+    padding-right: 0.3rem;
     font-size: 0.3rem;
     font-weight: bold;
     float: left;
-    line-height: 0.9rem;
+    border-right: 1px solid #bfbfbf;
+    /*line-height: 0.9rem;*/
 }
 .dis_table_info>input{
     float: left;
-    height: 0.4rem;
-    margin-top: 0.25rem;
-    border-left: 1px solid #bfbfbf;
+    height: 0.9rem;
+    line-height: 0.9rem;
     text-indent: 1em;
+    width: 4.5rem;
 }
 
 /*用户想法选择*/
