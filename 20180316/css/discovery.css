@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body,.discovery{
+    width: 100%;
+    height: auto;
+    font-family: "PingFangSC";
+}
+.discovery{
+    background-image: url("../img/bj_small.jpg");
+    background-size: contain;
+    background-position: bottom center;
+    overflow: hidden;
+    padding-bottom: 0.6rem;
+}
+/*common css*/
+img{
+    width: 100%;
+    height: auto;
+}
+img,span,a,input,h2,h3,h4,textarea{
+    display: block;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+    border: none;
+    outline: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+input::placeholder,input::-webkit-input-placeholder,input:-moz-placeholder,
+textarea::placeholder,textarea::-webkit-input-placeholder,textarea:-moz-placeholder{
+    color: #bfbfbf;
+}
+textarea::-webkit-scrollbar{
+    width: 0.05rem;
+}
+textarea::-webkit-scrollbar-thumb{
+    border-radius: 90px;
+    height: 0.1rem;
+    background-color: #bfbfbf;
+    width: 0.05rem;
+}
+b{
+    width: 0.24rem;
+    height: 0.24rem;
+    border-radius: 90px;
+    border: 1px solid #333333;
+    margin-top: 0.11rem;
+    margin-right: 0.05rem;
+    display: block;
+    float: left;
+}
+
+
+/*卷轴头部*/
+.dis_pic{
+    margin: 0.3rem auto 0;
+    width: 7.2rem;
+
+}
+
+/*意见反馈content*/
+.dis_content{
+    width: 7.04rem;
+    margin: 0 auto;
+    /*height: 23.6rem;*/
+    height: auto;
+    background-color: #fdf4da;
+    overflow: hidden;
+    box-shadow: inset 0 4px 13px 0 rgba(0, 0, 0, 0.09);
+}
+.dis_table_title{
+    font-size: 0.4rem;
+    text-align: center;
+    margin: 0.5rem auto 0.4rem;
+}
+.dis_table_info{
+    height: 0.9rem;
+    width: 6.6rem;
+    background-color: #fff;
+    margin: 0 auto 0.1rem;
+    border: 1px solid transparent;
+}
+.dis_table_info>span{
+    margin: 0 0.3rem;
+    font-size: 0.3rem;
+    font-weight: bold;
+    float: left;
+    line-height: 0.9rem;
+}
+.dis_table_info>input{
+    float: left;
+    height: 0.4rem;
+    margin-top: 0.25rem;
+    border-left: 1px solid #bfbfbf;
+    text-indent: 1em;
+}
+
+/*用户想法选择*/
+.dis_thought_title{
+    font-size: 0.4rem;
+    text-align: center;
+    margin: 0.5rem auto 0.4rem;
+    width: 5.4rem;
+}
+.dis_thought_title>img{
+    float: left;
+    height: 0.5rem;
+    width: auto;
+    margin-right: 0.05rem;
+}
+.dis_thought_list{
+    width: 100%;
+    height: auto;
+}
+.dis_thought_detail{
+    /*height: 0.75rem;*/
+    margin-bottom: 0.3rem;
+    border: 1px solid transparent;
+}
+.dis_thought_detail>h4{
+    font-size: 0.3rem;
+    margin-left: 0.2rem;
+    margin-bottom: 0.1rem;
+}
+.dis_choose{
+    width: 100%;
+    height: 0.46rem;
+    overflow: hidden;
+}
+.dis_choose>li{
+    list-style: none;
+    width: 25%;
+    float: left;
+    font-size: 0.24rem;
+    text-align: center;
+}
+.dis_choose_detail{
+    display: inline-block;
+    margin: 0 auto;
+    line-height: 0.46rem;
+}
+
+
+/*优化建议填写*/
+.dis_advice_title{
+    font-size: 0.4rem;
+    text-align: center;
+    margin: 0.5rem auto 0.4rem;
+    width: 5.4rem;
+}
+.dis_advice_title>img{
+    float: left;
+    height: 0.5rem;
+    width: auto;
+    margin-right: 0.05rem;
+}
+.dis_advice_box{
+    width: 6.6rem;
+    height: 2.5rem;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+}
+.dis_advice_box>textarea{
+    width: 6.1rem;
+    height: 2.25rem;
+    display: block;
+    margin: 0.25rem;
+    resize: none;
+    line-height: 0.6rem;
+    font-size: 0.24rem;
+    caret-color:#bfbfbf;
+    border: 1px solid transparent;
+}
+#dis_submit{
+    width: 6rem;
+    height: 0.9rem;
+    margin: 0.5rem auto 0.8rem;
+    background-color: #f4463d;
+    color: #fff;
+    font-size: 0.32rem;
+    border-radius: 0.1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/*被选中的会添加一个checked类*/
+.checked{
+    display: block;
+    background-color: #f2483f;
+    width: 0.16rem;
+    height: 0.16rem;
+    border-radius: 90px;
+    margin: 0.04rem;
+}
+/*表单、选项、建议未填写时添加一个empty类*/
+.empty{
+    border: 1px solid pink;
+}
+
