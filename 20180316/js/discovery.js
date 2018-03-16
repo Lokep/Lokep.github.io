@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created by yeebee on 2018/3/14.
  */
 window.onload=function () {
@@ -76,7 +76,7 @@ window.onload=function () {
     };
 
     thought.onfocus = function () {
-        window.scrollTo(0,this.offsetTop);
+        window.scrollTo(0,this.offsetTop+400);
     }
 
 
