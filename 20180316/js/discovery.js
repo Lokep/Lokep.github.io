@@ -3,23 +3,6 @@
  */
 window.onload=function () {
 
-    /*表单信息*/
-    // var userName = document.getElementById('userName');
-    // var phone = document.getElementById('phone');
-    // var companyName = document.getElementById('companyName');
-    // var position = document.getElementById('position');
-
-    /*选项部分*/
-    // var performance = document.getElementById('performance');
-    // var creativity = document.getElementById('creativity');
-    // var cost = document.getElementById('cost');
-    // var affect = document.getElementById('affect');
-    // var practicability = document.getElementById('practicability');
-    // var profession = document.getElementById('profession');
-    // var stability = document.getElementById('stability');
-    // var hommization = document.getElementById('hommization');
-    // var content = document.getElementById('content');
-
     /*想法填写部分*/
     var thought = document.getElementById('thought');
 
@@ -42,13 +25,12 @@ window.onload=function () {
     Submit.onclick = function () {
 
         var cc = CheckChoose(_classList,'dis_thought_detail');
-
-        console.log(cc);
-
         var ct = CheckThought('thought');
-
-        console.log(ct);
         if(cc.length<10||ct===''){
+
+            var _empty = document.getElementsByClassName('empty')[0];
+            var sc = _empty.offsetTop;
+            window.scrollTo(0,sc);
             return false
         }else{
 
@@ -80,23 +62,22 @@ window.onload=function () {
                     content:Info.content,
                     advice:Info.advice
                 },
-                // success:function(data){
-                //     console.log(data);
-                // },
-                // error:function(err){
-                //     console.log(err);
-                // }
-            }).then(function (res) {
-                console.log(res)
+                success:function(data){
+                    console.log(data);
+                    alert('提交成功')
+                },
+                error:function(err){
+                    console.log(err);
+                    alert('提交失败');
+                }
             });
         }
 
     };
 
-
-
-
-
+    thought.onfocus = function () {
+        window.scrollTo(0,this.offsetTop);
+    }
 
 
 
