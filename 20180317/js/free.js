@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created by yeebee on 2018/3/16.
  */
 window.onload = function () {
@@ -28,7 +28,6 @@ LazyLoad.prototype.fnScroll = function () {
             Src=Src.replace(/.png|.jpg$/g,'.gif');
             this.node[i].setAttribute('src',Src);
         }
-        console.log(this.node[i].offsetTop);
     }
 
 
