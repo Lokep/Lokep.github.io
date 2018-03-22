@@ -1,0 +1,38 @@
+* {margin:0;padding:0;}
+html,body,.box {width:100%;height:auto;}
+.million {font-family:PingFangSC;}
+a {display:block;text-decoration:none;}
+img {font-size:.25rem;}
+img,span {display:block;border:none;}
+b {color:#000;}
+.m_header {width:100%;font-size:.44rem;}
+.con {width:100%;height:15.8rem;background-color:#a62224;}
+.con_super {width:100%;height:6.32rem;position:relative;}
+.con_super_title {width:5.05rem;margin:0 auto;}
+.con_building,.con_superBee,.con_road {position:absolute;}
+.con_building {bottom:1.21rem;height:3.89rem;z-index:9;}
+.con_building:nth-of-type(1) {left:.1rem;}
+.con_building:nth-of-type(2) {left:1.77rem;}
+.con_building:nth-of-type(3) {left:3.92rem;}
+.con_building:nth-of-type(4) {left:5.7rem;}
+.con_superBee {bottom:.2rem;left:.5rem;right:0;height:3.62rem;z-index:11;margin:auto;}
+.con_road {width:100%;bottom:0;z-index:10;}
+.con_bee_title {width:6.21rem;margin:.9rem auto .45rem;}
+.con_bee_yee {width:6.92rem;margin:0 auto;}
+.m_footer {width:100%;background-color:#a18214;padding:.75rem 0 .6rem;}
+.m_footer_1 {height:.6rem;overflow:hidden;margin-left:.18rem;}
+.m_footer_1>span {float:left;text-align:center;font-weight:600;height:.6rem;line-height:.6rem;}
+.m_footer_1>span:nth-child(1) {background-color:#a62224;font-size:.36rem;color:#fff;padding:0 .13rem;}
+.m_footer_1>span:nth-child(2) {background-color:#fff;font-size:.3rem;color:#4e4e4e;padding:0 .16rem;}
+.m_footer_line {height:0;width:6.92rem;border:1px dashed #2f303c;margin:.45rem auto;}
+.m_footer_2 {width:1.5rem;background-color:#a62224;text-align:center;font-size:.36rem;margin-left:.18rem;font-weight:600;height:.6rem;line-height:.6rem;color:#fff;padding:0 .13rem;}
+.m_rule {font-size:.3rem;color:#fff;line-height:1.933;font-family:PingFangSC;margin:.2rem 0 .2rem .5rem;}
+.m_activity {font-size:.3rem;color:#fff;margin:.18rem 0 0 .18rem;}
+.m_right {background-color:#5d4800;width:100%;height:.62rem;line-height:.62rem;text-align:center;font-size:.18rem;font-family:PingFangSC;color:#fff;}
+.m_qr {width:100%;height:4rem;background-color:#8c6d00;background-size:contain;}
+.m_qr_line {float:left;height:2.1rem;width:0;border:.5px solid #525252;margin-top:.9rem;}
+.m_qr_left {position:relative;width:calc(3.95rem - 3px);float:left;height:4rem;}
+.m_qr_right {width:3.55rem;float:left;}
+.m_bee {width:4.55rem;position:absolute;top:0;left:0;z-index:109;}
+.m_ad {position:absolute;bottom:.7rem;left:.85rem;z-index:110;width:2.3rem;}
+.m_qr_code {width:2.7rem;margin:.6rem auto 0;}
