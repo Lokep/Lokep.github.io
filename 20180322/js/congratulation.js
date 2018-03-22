@@ -8,21 +8,21 @@ window.onload = function () {
     var Super = document.getElementsByClassName('con_superBee')[0];
     var YeeBee = document.getElementsByClassName('con_bee_yee')[0];
     var MBee = document.getElementsByClassName('m_bee')[0];
+    replacePng(Super);
     window.onscroll = function () {
-        replacePng(Super);
         replacePng(YeeBee);
         replacePng(MBee);
-    }
+    };
     for(var i=0;i<building.length;i++){
         replaceDataSrc(building,i);
     }
-   
+
 };
 function replaceDataSrc(el,i) {
     var Src = el[i].getAttribute('data-src');
     setTimeout(function () {
         el[i].setAttribute('src',Src);
-    },i*100);
+    },i*100+500);
 }
 function replacePng(el) {
     var Src = el.getAttribute('src');
