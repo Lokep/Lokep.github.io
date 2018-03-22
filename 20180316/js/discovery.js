@@ -41,7 +41,7 @@ window.onload=function () {
                 //请求方式
                 type:'POST',
                 //发送请求的地址
-                url:'http://javaapi.yeebee.com.cn/feedback/feedback',
+                url:'//javaapi.yeebee.com.cn/feedback/feedback',
                 //服务器返回的数据类型
                 dataType:'json',
                 //发送到服务器的数据，对象必须为key/value的格式，jquery会自动转换为字符串格式
