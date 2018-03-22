@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created by yeebee on 2018/3/16.
  */
 window.onload = function () {
@@ -8,15 +8,15 @@ window.onload = function () {
     var Super = document.getElementsByClassName('con_superBee')[0];
     var YeeBee = document.getElementsByClassName('con_bee_yee')[0];
     var MBee = document.getElementsByClassName('m_bee')[0];
-
-    for(var i=0;i<building.length;i++){
-        replaceDataSrc(building,i);
-    }
     window.onscroll = function () {
         replacePng(Super);
         replacePng(YeeBee);
         replacePng(MBee);
     }
+    for(var i=0;i<building.length;i++){
+        replaceDataSrc(building,i);
+    }
+   
 };
 function replaceDataSrc(el,i) {
     var Src = el[i].getAttribute('data-src');
