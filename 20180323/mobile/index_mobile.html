@@ -61,15 +61,24 @@
         window.onload = function () {
             var LazyLoad = document.getElementsByClassName('together_lazy');
             var Fix =document.getElementsByClassName('together_book')[0];
+            var Interval =null;
 
             for(var i=0;i<LazyLoad.length;i++){
                 replaceDataSrc(LazyLoad,i);
             }
 
-            document.addEventListener('scroll',function () {
+            document.addEventListener('touchstart',function () {
+                Interval = null;
+            },false);
 
-                var sc = getScrollTop();
-                sc>=7578?Fix.classList.remove('together_fixed'):Fix.classList.add('together_fixed');
+            document.addEventListener('touchend',function (e) {
+                Interval = setInterval(function () {
+                    var sc = getScrollTop();
+                    sc>=7578?Fix.classList.remove('together_fixed'):Fix.classList.add('together_fixed');
+                },200);
+                setTimeout(function () {
+                    clearInterval(Interval);
+                },2000);
 
             },false);
 
