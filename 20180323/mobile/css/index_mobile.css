@@ -5,6 +5,7 @@
 html,body,.together{
     width: 100%;
     height: auto;
+    -webkit-overflow-scrolling:touch;
 }
 
 a,span,img{
