@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body,.together{
+    width: 100%;
+    height: auto;
+    min-width: 850px;
+}
+img,a,span{
+    display: block;
+    font-size: 30px;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+.together{
+    background-color: #fff;
+}
+.together_banner{
+    width: 100%;
+    min-width: 850px;
+    height: auto;
+}
+.together_content{
+    width: 850px;
+    margin: 0 auto;
+}
+.together_lazy{
+    background-color: #f1f1f1;
+}
+.together_lazy>img{
+    opacity: 0;
+    -webkit-transition: opacity .7s;
+    -moz-transition: opacity .7s;
+    -ms-transition: opacity .7s;
+    -o-transition: opacity .7s;
+    transition: opacity .7s;
+}
+
+.together_book{
+    width: 100%;
+    height: 80px;
+    background-color: #594fcd;
+    overflow: hidden;
+}
+.together_book>img{
+    margin: 15px auto;
+}
+.together_fixed{
+    position: fixed;
+    bottom: 0;
+}
+
+
+.together_txt{
+    height: 125px;
+    text-align: center;
+    color: #999;
+    font-size: 26px;
+    line-height: 70px;
+}

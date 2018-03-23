@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一起写</title>
+    <link rel="stylesheet" href="css/index_mobile.css">
+</head>
+<body>
+
+    <div class="together">
+        <img src="img/750_01.png" alt="" class="together_banner">
+        <div class="together_content">
+
+            <div class="together_lazy">
+                <img data-src="img/750_02.png" alt="">
+            </div>
+            <div class="together_lazy">
+                <img data-src="img/750_03.png" alt="">
+            </div>
+            <div class="together_lazy">
+                <img data-src="img/750_04.png" alt="">
+            </div>
+            <div class="together_lazy">
+                <img data-src="img/750_05.png" alt="">
+            </div>
+            <div class="together_lazy">
+                <img data-src="img/750_06.png" alt="">
+            </div>
+
+        </div>
+
+        <a href="http://www.huodongxing.com/event/4429940937600" class="together_book together_fixed">
+            <img src="img/baoming.png" alt="立即报名">
+        </a>
+        <span class="together_txt">WWW.YIQIXIE.COM</span>
+
+    </div>
+
+
+    <script>
+
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>=640){
+                        docEl.style.fontSize = '100px';
+                    }else{
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+            console.log(docEl)
+        })(document, window);
+
+        window.onload = function () {
+            var LazyLoad = document.getElementsByClassName('together_lazy');
+            var Fix =document.getElementsByClassName('together_book')[0];
+
+            for(var i=0;i<LazyLoad.length;i++){
+                replaceDataSrc(LazyLoad,i);
+            }
+
+            window.onscroll = function () {
+                var sc = getScrollTop();
+                console.log(sc);
+                sc>=7578?Fix.classList.remove('together_fixed'):Fix.classList.add('together_fixed');
+            }
+
+        };
+        function replaceDataSrc(el,i) {
+            var Data = el[i].getElementsByTagName('img')[0];
+            var DataSrc = Data.getAttribute('data-src');
+            setTimeout(function () {
+                Data.setAttribute('src',DataSrc);
+                Data.style.opacity=1;
+            },i*500);
+        }
+
+        function getScrollTop() {
+            return window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop;
+        }
+
+    </script>
+</body>
+</html>

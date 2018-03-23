@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一起写</title>
+    <link rel="icon" href="img/yeebee.ico">
+    <link rel="short icon" href="img/yeebee.ico">
+    <link rel="stylesheet" href="css/index_pc.css">
+</head>
+<body>
+    <div class="together">
+        <img src="img/1920_01.png" alt="一起写银四之约" class="together_banner">
+        
+        <div class="together_content">
+
+            <div class="together_lazy">
+                <img data-src="img/1920_03.png" alt="">
+            </div>
+            <div class="together_lazy">
+                <img data-src="img/1920_05.png" alt="">
+            </div>
+            <div class="together_lazy">
+                <img data-src="img/1920_06.png" alt="">
+            </div>
+            <div class="together_lazy">
+                <img data-src="img/1920_07.png" alt="">
+            </div>
+            <div class="together_lazy">
+                <img data-src="img/1920_08.png" alt="">
+            </div>
+            <div class="together_lazy">
+                <img data-src="img/1920_09.png" alt="">
+            </div>
+            <div class="together_lazy">
+                <img data-src="img/1920_10.png" alt="">
+            </div>
+        </div>
+
+        <a href="http://www.huodongxing.com/event/4429940937600" class="together_book together_fixed">
+            <img src="img/baoming.png" alt="立即报名">
+        </a>
+        <span class="together_txt">WWW.YIQIXIE.COM</span>
+
+    </div>
+
+    <script>
+        window.onload = function () {
+            var LazyLoad = document.getElementsByClassName('together_lazy');
+            var Fix =document.getElementsByClassName('together_book')[0];
+
+            for(var i=0;i<LazyLoad.length;i++){
+                replaceDataSrc(LazyLoad,i);
+            }
+
+            window.onscroll = function () {
+                var sc = getScrollTop();
+                sc>=7020?Fix.classList.remove('together_fixed'):Fix.classList.add('together_fixed');
+            }
+
+        };
+        function replaceDataSrc(el,i) {
+            var Data = el[i].getElementsByTagName('img')[0];
+            var DataSrc = Data.getAttribute('data-src');
+            setTimeout(function () {
+                Data.setAttribute('src',DataSrc);
+                Data.style.opacity=1;
+            },i*500);
+        }
+
+        function getScrollTop() {
+            return window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop;
+        }
+    </script>
+</body>
+</html>
