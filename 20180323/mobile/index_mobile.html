@@ -66,11 +66,12 @@
                 replaceDataSrc(LazyLoad,i);
             }
 
-            window.onscroll = function () {
+            document.addEventListener('scroll',function () {
+
                 var sc = getScrollTop();
-                console.log(sc);
                 sc>=7578?Fix.classList.remove('together_fixed'):Fix.classList.add('together_fixed');
-            }
+
+            },false);
 
         };
         function replaceDataSrc(el,i) {
