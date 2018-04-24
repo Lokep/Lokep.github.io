@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>亿蜂，让你的工作简单点儿！</title>
+    <meta name="description" content="亿蜂是最早做企业服务的B2B交易平台，为中小企业提供一站式服务。提供公司注册,商标注册,营销推广,工商财税,IT服务等各类企业服务，欢迎更多的企业加入！亿蜂，让你的工作简单点儿！">
+    <meta name="keywords" content="企业服务平台,企业服务交易,工商财税代理,商标注册,高新企业技术认定,孵化器">
+    <link rel="short icon" href="img/yeebee.ico">
+    <link rel="icon" href="img/yeebee.ico">
+    <link rel="stylesheet" href="css/Shop.css">
+</head>
+<body>
+    <div class="shop">
+        <!--topBar和header部分为公共部分-->
+        <img class="topBar" src="img/0banner_ad.png" alt="有奖问答·快来找茬">
+        <div class="header">
+            <div class="headerBox">
+                <div class="headerTop">
+                    <img src="img/0yeebeelogo.png" alt="yeebee" class="headerLogo">
+                    <img src="img/0slogan.png" alt="让你的工作简单点儿" class="headerSlogan">
+                    <div class="headerRight">
+                        <div class="searchBox">
+                            <input placeholder="请输入关键词" type="text" id="searchInput">
+                            <div class="selectionPart">
+                                <i class="Arrow"></i>
+                                <span class="optionPart">搜服务</span>
+                                <span class="optionPart unSelected">搜店铺</span>
+                            </div>
+                        </div>
+                        <input type="button" id="searchButton" value="搜索">
+                        <span class="or">或</span>
+                        <input type="button" id="needButton" value="发布需求">
+                    </div>
+                </div>
+                <div class="headerBottom">
+                    <span class="allService">全部服务分类</span>
+                    <ul class="headerNav">
+                        <li class="clicked">
+                            <a href="#">首页</a>
+                        </li>
+                        <li>
+                            <a href="#">需求大厅</a>
+                        </li>
+                        <li>
+                            <a href="#">服务商库</a>
+                        </li>
+                        <li>
+                            <a href="#">交易成果</a>
+                        </li>
+                        <li>
+                            |
+                        </li>
+                        <li>
+                            <a href="#">创业园</a>
+                        </li>
+                        <li>
+                            <a href="#">会员权益</a>
+                        </li>
+                    </ul>
+                    <i class="NavSlip"></i>
+                    <div class="signPart">
+                        <span class="signUp">注册</span>
+                        <span class="signOut beforeSign">退出</span>
+                        <span style="color: rgb(221, 221, 221);">|</span>
+                        <span class="signIn">登录</span>
+                        <span class="signUserName beforeSign"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="shopContent">
+            <div class="menupart">
+                <div class="menuTag">
+                    <a href="#">首页</a>
+                </div>
+                <div class="menuTag">
+                    <i></i>
+                    <a href="#">店铺</a>
+                </div>
+            </div>
+
+            <div class="shopPart">
+                <div class="shopBar">
+                    <div class="shopLogo">
+                        <img class="Scale" src="img/shop_logo.png" alt="店铺logo">
+                    </div>
+                    <h4 class="shopName">草帽电商店铺</h4>
+                    <ul class="shopMenu">
+                        <li class="shopActive">店铺<br />首页</li>
+                        <li>服务商<br />档案</li>
+                        <li>服务<br />产品</li>
+                        <li>项目<br />案例</li>
+                        <li>资质<br />证书</li>
+                    </ul>
+                </div>
+
+                <div class="shopContainer">
+                    <!--店铺首页-->
+                    <div class="shopDetail" style="display: block;">
+                        <div class="shopImg">
+                            <img src="img/shopImg.jpg" alt="店铺详情">
+                            <img src="img/shopImg.jpg" alt="店铺详情">
+                            <img src="img/shopImg.jpg" alt="店铺详情">
+                        </div>
+                        <div class="shopRecommend">
+                            <div class="shopReHead">
+                                <i></i>
+                                <h4>同类店铺</h4>
+                            </div>
+                            <div class="shopReLists">
+                                <a class="shopReList" href="#">
+                                    <div class="shopReLogo">
+                                        <img src="img/shop_logo.png" alt="LOGO" class="Scale">
+                                    </div>
+                                    <h4 class="shopReName">装修网店设计店铺</h4>
+                                    <div class="shopReTag">
+                                        <span>广告设计</span>
+                                        <span>包装设计</span>
+                                    </div>
+                                </a>
+                                <a class="shopReList" href="#">
+                                    <div class="shopReLogo">
+                                        <img src="img/shop_logo.png" alt="LOGO" class="Scale">
+                                    </div>
+                                    <h4 class="shopReName">装修网店设计店铺</h4>
+                                    <div class="shopReTag">
+                                        <span>广告设计</span>
+                                        <span>包装设计</span>
+                                    </div>
+                                </a>
+                                <a class="shopReList" href="#">
+                                    <div class="shopReLogo">
+                                        <img src="img/shop_logo.png" alt="LOGO" class="Scale">
+                                    </div>
+                                    <h4 class="shopReName">装修网店设计店铺</h4>
+                                    <div class="shopReTag">
+                                        <span>广告设计</span>
+                                        <span>包装设计</span>
+                                    </div>
+                                </a>
+                                <a class="shopReList" href="#">
+                                    <div class="shopReLogo">
+                                        <img src="img/shop_logo.png" alt="LOGO" class="Scale">
+                                    </div>
+                                    <h4 class="shopReName">装修网店设计店铺</h4>
+                                    <div class="shopReTag">
+                                        <span>广告设计</span>
+                                        <span>包装设计</span>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--服务商档案-->
+                    <div class="shopDetail" style="display: none;">
+                        <div class="service">
+                            <div class="serviceIntro">
+                                <div class="serTitle">
+                                    <i></i>
+                                    <h4>店铺介绍</h4>
+                                </div>
+                                <div class="serInList">
+                                    <p>1、设计作品要充分体现玉溪旅游的内涵及形象；</p>
+                                    <p>2、logo应主题鲜明、创意独特、寓意深远，具有强烈的视觉冲击力，便于识别、记忆和推广；</p>
+                                    <p>3、参赛者须提供不少于100字创意说明；</p>
+                                    <p>4、保证作品原创性，作品本身及任何主体特征性构成元素未以任何形式在国家商标局注册过。不得侵犯他人的著作权，不得违反任何法律法规。若有侵权和违法；</p>
+                                    <p>5、参赛作品一经采用，其所有权、修改权和使用权均归主办方所有，创作者不得再在任何地方使用。</p>
+                                    <p>6、最终解释权归大赛主办方所有。</p>
+                                </div>
+                            </div>
+                            <div class="serviceInfo">
+                                <div class="serTitle">
+                                    <i></i>
+                                    <h4>认证信息</h4>
+                                </div>
+                                <div class="serInfoList">
+                                    <div class="serInfoTxt">
+                                        <p>1、设计作品要充分体现玉溪旅游的内涵及形象；</p>
+                                        <p>2、logo应主题鲜明、创意独特、寓意深远，具有强烈的视觉冲击力，便于识别、记忆和推广；</p>
+                                        <p>3、参赛者须提供不少于100字创意说明；</p>
+                                    </div>
+                                    <div class="serInfoImg">
+                                        <div class="ExtendPic">
+                                            <img src="img/certificatepic.png">
+                                            <i></i>
+                                        </div>
+                                        <div class="ExtendPic">
+                                            <img src="img/certificatepic1.png">
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="serviceTag">
+                                <div class="serTitle">
+                                    <i></i>
+                                    <h4>认证信息</h4>
+                                </div>
+                                <ul class="serTag">
+                                    <li>广告设计</li>
+                                    <li>广告设计</li>
+                                    <li>广告设计</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--服务产品-->
+                    <div class="shopDetail" style="display: none">
+                        <div class="shopSearch">
+                            <input type="text" id="proSearch" placeholder="请输入关键词">
+                            <input type="button" id="proButton" value="搜本店">
+                        </div>
+                        <div class="product">
+                            <a class="CaseList" href="#">
+                                <div class="CasePic">
+                                    <img class="Scale" src="img/goods_pic.png">
+                                </div>
+                                <h4 class="CaseTitle">日本乐天拉杆箱... 拷贝</h4>
+                                <span class="CasePrice">￥1000</span>
+                                <div class="CaseLocation">
+                                    <i></i>
+                                    <span>新疆 乌鲁木齐</span>
+                                </div>
+                            </a>
+                            <a class="CaseList" href="#">
+                                <div class="CasePic">
+                                    <img class="Scale" src="img/goods_pic.png">
+                                </div>
+                                <h4 class="CaseTitle">日本乐天拉杆箱... 拷贝</h4>
+                                <span class="CasePrice">￥1000</span>
+                                <div class="CaseLocation">
+                                    <i></i>
+                                    <span>新疆 乌鲁木齐</span>
+                                </div>
+                            </a>
+                            <a class="CaseList" href="#">
+                                <div class="CasePic">
+                                    <img class="Scale" src="img/goods_pic.png">
+                                </div>
+                                <h4 class="CaseTitle">日本乐天拉杆箱... 拷贝</h4>
+                                <span class="CasePrice">￥1000</span>
+                                <div class="CaseLocation">
+                                    <i></i>
+                                    <span>新疆 乌鲁木齐</span>
+                                </div>
+                            </a>
+                            <a class="CaseList" href="#">
+                                <div class="CasePic">
+                                    <img class="Scale" src="img/goods_pic.png">
+                                </div>
+                                <h4 class="CaseTitle">日本乐天拉杆箱... 拷贝</h4>
+                                <span class="CasePrice">￥1000</span>
+                                <div class="CaseLocation">
+                                    <i></i>
+                                    <span>新疆 乌鲁木齐</span>
+                                </div>
+                            </a>
+                            <a class="CaseList" href="#">
+                                <div class="CasePic">
+                                    <img class="Scale" src="img/goods_pic.png">
+                                </div>
+                                <h4 class="CaseTitle">日本乐天拉杆箱... 拷贝</h4>
+                                <span class="CasePrice">￥1000</span>
+                                <div class="CaseLocation">
+                                    <i></i>
+                                    <span>新疆 乌鲁木齐</span>
+                                </div>
+                            </a>
+                            <a class="CaseList" href="#">
+                                <div class="CasePic">
+                                    <img class="Scale" src="img/goods_pic.png">
+                                </div>
+                                <h4 class="CaseTitle">日本乐天拉杆箱... 拷贝</h4>
+                                <span class="CasePrice">￥1000</span>
+                                <div class="CaseLocation">
+                                    <i></i>
+                                    <span>新疆 乌鲁木齐</span>
+                                </div>
+                            </a>
+                            <a class="CaseList" href="#">
+                                <div class="CasePic">
+                                    <img class="Scale" src="img/goods_pic.png">
+                                </div>
+                                <h4 class="CaseTitle">日本乐天拉杆箱... 拷贝</h4>
+                                <span class="CasePrice">￥1000</span>
+                                <div class="CaseLocation">
+                                    <i></i>
+                                    <span>新疆 乌鲁木齐</span>
+                                </div>
+                            </a>
+                            <a class="CaseList" href="#">
+                                <div class="CasePic">
+                                    <img class="Scale" src="img/goods_pic.png">
+                                </div>
+                                <h4 class="CaseTitle">日本乐天拉杆箱... 拷贝</h4>
+                                <span class="CasePrice">￥1000</span>
+                                <div class="CaseLocation">
+                                    <i></i>
+                                    <span>新疆 乌鲁木齐</span>
+                                </div>
+                            </a>
+                        </div>
+                        <!--分页器-->
+                        <div class="pagination">
+                            <div class="paginationBar">
+                                <span class="paginationPrev">上一页</span>
+                                <ul class="paginationList">
+                                    <li class="paginationActive">1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                    <li>······</li>
+                                </ul>
+                                <span class="paginationNext">下一页</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--项目案例-->
+                    <div class="shopDetail" style="display: none">
+                        <div class="Case">
+
+                            <a class="CaseList" href="#">
+                                <div class="CasePic">
+                                    <img class="Scale" src="img/goods_pic.png">
+                                </div>
+                                <h4 class="CaseTitle">日本乐天拉杆箱... 拷贝</h4>
+                                <span class="CaseStore">虎啸品牌设计虎啸品牌设计虎啸品牌设计虎啸品牌设计</span>
+                                <div class="CaseLocation">
+                                    <i></i>
+                                    <span>新疆 乌鲁木齐</span>
+                                </div>
+                            </a>
+                            <a class="CaseList" href="#">
+                                <div class="CasePic">
+                                    <img class="Scale" src="img/goods_pic.png">
+                                </div>
+                                <h4 class="CaseTitle">日本乐天拉杆箱... 拷贝</h4>
+                                <span class="CaseStore">虎啸品牌设计虎啸品牌设计虎啸品牌设计虎啸品牌设计</span>
+                                <div class="CaseLocation">
+                                    <i></i>
+                                    <span>新疆 乌鲁木齐</span>
+                                </div>
+                            </a>
+                            <a class="CaseList" href="#">
+                                <div class="CasePic">
+                                    <img class="Scale" src="img/goods_pic.png">
+                                </div>
+                                <h4 class="CaseTitle">日本乐天拉杆箱... 拷贝</h4>
+                                <span class="CaseStore">虎啸品牌设计虎啸品牌设计虎啸品牌设计虎啸品牌设计</span>
+                                <div class="CaseLocation">
+                                    <i></i>
+                                    <span>新疆 乌鲁木齐</span>
+                                </div>
+                            </a>
+                            <a class="CaseList" href="#">
+                                <div class="CasePic">
+                                    <img class="Scale" src="img/goods_pic.png">
+                                </div>
+                                <h4 class="CaseTitle">日本乐天拉杆箱... 拷贝</h4>
+                                <span class="CaseStore">虎啸品牌设计虎啸品牌设计虎啸品牌设计虎啸品牌设计</span>
+                                <div class="CaseLocation">
+                                    <i></i>
+                                    <span>新疆 乌鲁木齐</span>
+                                </div>
+                            </a>
+                            <a class="CaseList" href="#">
+                                <div class="CasePic">
+                                    <img class="Scale" src="img/goods_pic.png">
+                                </div>
+                                <h4 class="CaseTitle">日本乐天拉杆箱... 拷贝</h4>
+                                <span class="CaseStore">虎啸品牌设计虎啸品牌设计虎啸品牌设计虎啸品牌设计</span>
+                                <div class="CaseLocation">
+                                    <i></i>
+                                    <span>新疆 乌鲁木齐</span>
+                                </div>
+                            </a>
+                            <a class="CaseList" href="#">
+                                <div class="CasePic">
+                                    <img class="Scale" src="img/goods_pic.png">
+                                </div>
+                                <h4 class="CaseTitle">日本乐天拉杆箱... 拷贝</h4>
+                                <span class="CaseStore">虎啸品牌设计虎啸品牌设计虎啸品牌设计虎啸品牌设计</span>
+                                <div class="CaseLocation">
+                                    <i></i>
+                                    <span>新疆 乌鲁木齐</span>
+                                </div>
+                            </a>
+                            <a class="CaseList" href="#">
+                                <div class="CasePic">
+                                    <img class="Scale" src="img/goods_pic.png">
+                                </div>
+                                <h4 class="CaseTitle">日本乐天拉杆箱... 拷贝</h4>
+                                <span class="CaseStore">虎啸品牌设计虎啸品牌设计虎啸品牌设计虎啸品牌设计</span>
+                                <div class="CaseLocation">
+                                    <i></i>
+                                    <span>新疆 乌鲁木齐</span>
+                                </div>
+                            </a>
+                            <a class="CaseList" href="#">
+                                <div class="CasePic">
+                                    <img class="Scale" src="img/goods_pic.png">
+                                </div>
+                                <h4 class="CaseTitle">日本乐天拉杆箱... 拷贝</h4>
+                                <span class="CaseStore">虎啸品牌设计虎啸品牌设计虎啸品牌设计虎啸品牌设计</span>
+                                <div class="CaseLocation">
+                                    <i></i>
+                                    <span>新疆 乌鲁木齐</span>
+                                </div>
+                            </a>
+
+                        </div>
+                        <!--分页器-->
+                        <div class="pagination">
+                            <div class="paginationBar">
+                                <span class="paginationPrev">上一页</span>
+                                <ul class="paginationList">
+                                    <li class="paginationActive">1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                    <li>······</li>
+                                </ul>
+                                <span class="paginationNext">下一页</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--资历证书-->
+                    <div class="shopDetail" style="display: none">
+                        <div class="cert">
+                            <div class="ExtendImg">
+                                <img src="img/certificatepic.png">
+                                <i></i>
+                            </div>
+                            <div class="ExtendImg">
+                                <img src="img/certificatepic.png">
+                                <i></i>
+                            </div>
+                            <div class="ExtendImg">
+                                <img src="img/certificatepic.png">
+                                <i></i>
+                            </div>
+                            <div class="ExtendImg">
+                                <img src="img/certificatepic.png">
+                                <i></i>
+                            </div>
+                            <div class="ExtendImg">
+                                <img src="img/certificatepic.png">
+                                <i></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="mask">
+            <img src="img/certificatepic.png" alt="资历证书">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footer">
+
+        </div>
+    </div>
+<script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+<script type="text/javascript">
+    $youziku.load("body", "22852911dfa04f06abbcfb334f4bc7fc", "PingFangSC");
+    $youziku.draw();
+</script>
+<script src="js/jquery.js"></script>
+<script src="js/Shop.js"></script>
+</body>
+</html>
