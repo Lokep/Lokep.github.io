@@ -1,0 +1,21 @@
+.container{
+	width: 6.9rem;
+	margin: 0 auto;
+}
+.baseTitle{
+	width: 6.9rem;
+	margin: 0.3rem 0;
+	font-size: 0.36rem;
+	line-height: 0.5rem;
+}
+.baseImg{
+	width: 6.9rem;
+	height: 4.74rem;
+	margin-bottom: 0.1rem;
+}
+.baseTxt{
+	font-size:0.26rem;
+	line-height: 0.48rem;
+	text-indent: 2em;
+
+}
