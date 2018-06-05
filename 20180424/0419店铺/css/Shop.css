@@ -1,0 +1,854 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*font-family:'PingFangSC1153b54d0f1bf59';*/
+}
+html,body{
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9;
+    min-width: 1200px;
+}
+img,span,a,input,textarea{
+    display: block;
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+input,textarea,select,option{
+    outline:none;
+    resize: none;
+    border:none;
+}
+i{
+    display: block;
+}
+div>span div>i{
+    float: left;
+}
+.Scale{
+    -webkit-transition: transform .7s;
+    -moz-transition: transform .7s;
+    -ms-transition: transform .7s;
+    -o-transition: transform .7s;
+    transition: transform .7s;
+}
+.Scale:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/*正文*/
+.shop{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+/*顶部图片*/
+.topBar{
+    width: 1200px;
+    margin: 0 auto;
+}
+/*头部导航*/
+.header{
+    width: 100%;
+    height: 140px;
+    -o-box-shadow: 0.5px 0.866px 35px 0 rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0.5px 0.866px 35px 0 rgba(0, 0, 0, 0.21);
+    -webkit-box-shadow: 0.5px 0.866px 35px 0 rgba(0, 0, 0, 0.21);
+    box-shadow: 0.5px 0.866px 35px 0 rgba(0, 0, 0, 0.21);
+    background-color: #fff;
+}
+.headerBox{
+    width: 1200px;
+    height: 143px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.headerTop{
+    height: 60px;
+    margin: 20px auto 20px;
+}
+.headerLogo,.headerSlogan{
+    float: left;
+}
+.headerLogo{
+    height: 60px;
+}
+.headerSlogan{
+    height: 30px;
+    margin: 20px 0 10px 20px;
+}
+
+/*搜索框部分*/
+.headerRight{
+    width: 775px;
+    height: 40px;
+    float: right;
+}
+.headerRight>*{
+    float: left;
+}
+.searchBox{
+    width: 515px;
+    height: 36px;
+    border:2px solid #fedb3e;
+    border-right: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-image: -webkit-linear-gradient( 0, rgb(247,151,0) 0%, rgb(251,188,34) 30%, rgb(255,225,67) 92%) 10 30;
+    border-image: -ms-linear-gradient( 0, rgb(247,151,0) 0%, rgb(251,188,34) 30%, rgb(255,225,67) 92%) 10 30;
+    border-image: -moz-linear-gradient( 0, rgb(247,151,0) 0%, rgb(251,188,34) 30%, rgb(255,225,67) 92%) 10 30;
+    border-image: linear-gradient( 0, rgb(247,151,0) 0%, rgb(251,188,34) 30%, rgb(255,225,67) 92%) 10 30;
+}
+#searchInput,.selectionPart{
+    float: left;
+}
+#searchInput{
+    width: 435px;
+    height: 100%;
+    text-indent: 1em;
+}
+.selectionPart{
+    width: 80px;
+    height: 36px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.Arrow{
+    position: absolute;
+    background: url('../img/sprite_shop.png') no-repeat -20px -20px;
+    width: 12px;
+    height: 6px;
+    right: 5px;
+    top:15px;
+    z-index: 1111;
+    -webkit-transition: transform .7s;
+    -moz-transition: transform .7s;
+    -ms-transition: transform .7s;
+    -o-transition: transform .7s;
+    transition: transform .7s;
+}
+.selectionPart:hover{
+    overflow: visible;
+}
+.selectionPart:hover .optionPart{
+    z-index: 111;
+}
+.selectionPart:hover .Arrow{
+    -webkit-transform: rotateZ(180deg);
+    -moz-transform: rotateZ(180deg);
+    -ms-transform: rotateZ(180deg);
+    -o-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+.optionPart{
+    width: 80px;
+    height: 40px;
+    line-height: 36px;
+    cursor: pointer;
+    text-align: left;
+    text-indent: 0.5em;
+    position: absolute;
+    right: 0;
+    top:0;
+    background-color: #efefef;
+}
+.unSelected{
+    top:40px;
+    background-color: #fff;
+    line-height: 40px;
+    -moz-box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+    -webkit-box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+    box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+}
+#searchInput::placeholder,#searchInput::-webkit-input-placeholder{
+    font-size: 14px;
+    color: rgb(136, 136, 136);
+}
+#searchButton{
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    background-image: -moz-linear-gradient( 95deg, rgb(247,151,0) 0%, rgb(251,188,34) 48%, rgb(255,225,67) 99%);
+    background-image: -webkit-linear-gradient( 95deg, rgb(247,151,0) 0%, rgb(251,188,34) 48%, rgb(255,225,67) 99%);
+    background-image: -ms-linear-gradient( 95deg, rgb(247,151,0) 0%, rgb(251,188,34) 48%, rgb(255,225,67) 99%);
+    -moz-box-shadow: 0 3px 8px 0 rgba(231, 140, 7, 0.4);
+    -webkit-box-shadow: 0 3px 8px 0 rgba(231, 140, 7, 0.4);
+    box-shadow: 0 3px 8px 0 rgba(231, 140, 7, 0.4);
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1px 2px rgba(213, 137, 2, 0.004);
+}
+.or{
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+}
+#needButton{
+    width: 113px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1px 2px rgba(213, 137, 2, 0.004);
+    background-image: -moz-linear-gradient( 95deg, rgb(247,151,0) 0%, rgb(251,188,34) 48%, rgb(255,225,67) 99%);
+    background-image: -webkit-linear-gradient( 95deg, rgb(247,151,0) 0%, rgb(251,188,34) 48%, rgb(255,225,67) 99%);
+    background-image: -ms-linear-gradient( 95deg, rgb(247,151,0) 0%, rgb(251,188,34) 48%, rgb(255,225,67) 99%);
+}
+.headerBottom{
+    height: 40px;
+    position: relative;
+}
+.allService,.headerNav{
+    float: left;
+}
+.allService{
+    width: 230px;
+    height: 40px;
+    background-image: -moz-linear-gradient( 95deg, rgb(76,76,76) 0%, rgb(101,101,101) 48%, rgb(126,126,126) 99%);
+    background-image: -webkit-linear-gradient( 95deg, rgb(76,76,76) 0%, rgb(101,101,101) 48%, rgb(126,126,126) 99%);
+    background-image: -ms-linear-gradient( 95deg, rgb(76,76,76) 0%, rgb(101,101,101) 48%, rgb(126,126,126) 99%);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    font-weight: 600;
+    margin-right: 40px;
+}
+.headerNav{
+    width: 545px;
+}
+.headerNav>li{
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+    line-height: 37px;
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+}
+.headerNav>li:last-child{
+    margin-right: 0;
+}
+.headerNav>li:not(:nth-child(5)):hover{
+    color: rgb(243, 149, 25);
+    font-weight: 600;
+}
+.headerNav>.clicked{
+    font-size: 16px;
+    color: rgb(243, 149, 25);
+    font-weight: 600;
+    border-bottom: 3px solid rgb(243, 149, 25);
+    border-image: -moz-linear-gradient( 0, rgb(247,151,0) 0%, rgb(251,188,34) 30%, rgb(255,225,67) 92%) 10 30;
+    border-image: -o-linear-gradient( 0, rgb(247,151,0) 0%, rgb(251,188,34) 30%, rgb(255,225,67) 92%) 10 30;
+    border-image: -webkit-linear-gradient( 0, rgb(247,151,0) 0%, rgb(251,188,34) 30%, rgb(255,225,67) 92%) 10 30;
+    border-image: linear-gradient( 0, rgb(247,151,0) 0%, rgb(251,188,34) 30%, rgb(255,225,67) 92%) 10 10;
+}
+
+/*滑动块*/
+.NavSlip{
+    position: absolute;
+    background-image: -moz-linear-gradient( 95deg, rgb(247,151,0) 0%, rgb(251,188,34) 48%, rgb(255,225,67) 99%);
+    background-image: -webkit-linear-gradient( 95deg, rgb(247,151,0) 0%, rgb(251,188,34) 48%, rgb(255,225,67) 99%);
+    background-image: -ms-linear-gradient( 95deg, rgb(247,151,0) 0%, rgb(251,188,34) 48%, rgb(255,225,67) 99%);
+    height: 3px;
+    border-radius: 5px;
+    bottom: 0;
+    width: 0;
+    font-size: 16px;
+    -moz-transition: all 0.75s;
+    -o-transition: all 0.75s;
+    -ms-transition: all 0.75s;
+    transition: all 0.75s;
+}
+
+
+
+/*登录注册*/
+.signPart{
+    float: right;
+}
+.signPart>span{
+    float: right;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    padding: 0 5px;
+    color: rgb(136, 136, 136);
+}
+.signPart>span:hover{
+    color: rgb(243, 149, 25);
+}
+.beforeSign{
+    display: none;
+}
+.signUserName{
+    width: 6em;
+}
+/**/
+
+.shopContent{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.menupart{
+    height: 55px;
+    width: 1200px;
+}
+.menuTag{
+    float: left;
+    margin: 22.5px auto;
+    font-size: 12px;
+    color: #888;
+    line-height: 12px;
+}
+.menuTag>*{
+    float: left;
+}
+.menuTag>i{
+    background: url('../img/sprite_need.png') no-repeat -20px -46px;
+    width: 5px;
+    height: 10px;
+    margin: 1px 10px;
+}
+
+.shopPart{
+    width: 1200px;
+    overflow: hidden;
+}
+
+
+.shopBar,.shopDetail{
+    float: left;
+}
+.shopBar{
+    width: 100px;
+    margin-right: 20px;
+}
+.shopLogo{
+    overflow: hidden;
+}
+.shopLogo>img{
+    width: 100px;
+}
+.shopName{
+    font-size: 14px;
+    color: rgb(68, 68, 68);
+    line-height: 50px;
+}
+.shopMenu{
+    border-radius: 2px;
+    width: 90px;
+    background-color: rgb(255, 255, 255);
+    -moz-box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+    -o-box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+    -webkit-box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+    box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+    overflow: hidden;
+}
+.shopMenu>li{
+    list-style: none;
+    padding: 20px;
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+    line-height: 18px;
+    text-align: center;
+    width: 50px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(239, 239, 239);
+}
+.shopMenu>.shopActive{
+    background-image: -moz-linear-gradient( 95deg, rgb(76,76,76) 0%, rgb(113,113,113) 48%, rgb(149,149,149) 99%);
+    background-image: -webkit-linear-gradient( 95deg, rgb(76,76,76) 0%, rgb(113,113,113) 48%, rgb(149,149,149) 99%);
+    background-image: -ms-linear-gradient( 95deg, rgb(76,76,76) 0%, rgb(113,113,113) 48%, rgb(149,149,149) 99%);
+    color: #fff;
+}
+.shopContainer{
+    /*overflow: hidden;*/
+}
+.shopDetail{
+    width: 1080px;
+    /*overflow: hidden;*/
+    -webkit-transition: height .7s;
+    -moz-transition: height .7s;
+    -ms-transition: height .7s;
+    -o-transition: height .7s;
+    transition: height .7s;
+    margin-bottom: 100px;
+}
+.shopImg,.shopRecommend{
+    float: left;
+}
+.shopImg{
+    padding: 20px 52px;
+    background-color: #fff;
+    -moz-box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+    -o-box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+    -webkit-box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+    box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+    font-size: 0;
+    line-height: 0;
+}
+.shopImg>img{
+    width: 750px;
+    vertical-align: bottom;
+}
+
+.shopRecommend{
+    float: right;
+}
+.shopReHead{
+    width: 200px;
+    height: 45px;
+    background-color: rgb(76,76,76);
+    background-image: -moz-linear-gradient( 95deg, rgb(76,76,76) 0%, rgb(101,101,101) 48%, rgb(126,126,126) 99%);
+    background-image: -webkit-linear-gradient( 95deg, rgb(76,76,76) 0%, rgb(101,101,101) 48%, rgb(126,126,126) 99%);
+    background-image: -ms-linear-gradient( 95deg, rgb(76,76,76) 0%, rgb(101,101,101) 48%, rgb(126,126,126) 99%);
+
+}
+.shopReHead>*{
+    float: left;
+}
+.shopReHead>i{
+    background: url('../img/sprite_shop.png') no-repeat -20px -46px;
+    width: 20px;
+    height: 20px;
+    margin: 12.5px 5px 12.5px 10px;
+}
+.shopReHead>h4{
+    line-height: 45px;
+    font-size: 16px;
+    color: #fff;
+}
+.shopReLists{
+    width: 162px;
+    padding: 20px 16px 10px 22px;
+    background-color: #fff;
+    -moz-box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+    -o-box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+    -webkit-box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+    box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+}
+.shopReList{
+    width: 160px;
+    height: 235px;
+    border: 1px solid rgb(221, 221, 221);
+    margin-bottom: 10px;
+}
+.shopReLogo{
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+}
+.shopReLogo>img{
+    height: 160px;
+}
+.shopReName{
+    font-size: 14px;
+    color: rgb(68, 68, 68);
+    line-height: 36px;
+    margin-left: 12px;
+}
+.shopReTag{
+    margin-left: 12px;
+}
+.shopReTag>span{
+    float: left;
+    border:1px solid rgb(89, 161, 234);
+    border-radius: 2px;
+    width: 63px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(89, 161, 234);
+    margin-right: 6px;
+}
+
+/*服务商档案*/
+.service{
+    width: 1080px;
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 40px;
+    -moz-box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+    -o-box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+    -webkit-box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+    box-shadow: 0.5px 0.866px 13px 0 rgba(0, 0, 0, 0.21);
+}
+.serviceIntro,.serviceinfo{
+    width: 1080px;
+}
+.serTitle{
+    height: 26px;
+    margin-top: 40px;
+
+}
+.serTitle>*{
+    float: left;
+}
+.serTitle>i{
+    background: url('../img/sprite_shop.png') no-repeat -70px -46px;
+    width: 4px;
+    height: 26px;
+    margin-right: 25px;
+}
+.serTitle>h4{
+    font-size: 18px;
+    color: rgb(243, 149, 25);
+    line-height: 26px;
+}
+
+.serInList,.serInfoList{
+    width: 1024px;
+    margin: 20px auto 0;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(239, 239, 239);
+}
+.serInList>*{
+    font-size: 14px;
+    color: rgb(136, 136, 136);
+    line-height: 20px;
+    margin-bottom: 24px;
+}
+/*认证信息*/
+.serInfoTxt,.serInfoImg{
+    float: left;
+}
+.serInfoTxt{
+    width: 570px;
+    margin-right: 40px;
+}
+.serInfoTxt>*{
+    font-size: 14px;
+    color: rgb(136, 136, 136);
+    line-height: 1.429;
+    margin-bottom: 24px;
+}
+.serInfoImg{
+    width:410px;
+}
+.ExtendPic{
+    float: left;
+    height: 130px;
+    border-radius: 2px;
+    position: relative;
+    cursor: url('../img/cursor.ico'),auto;
+}
+.ExtendPic:nth-of-type(1){
+    margin-right: 10px;
+}
+.ExtendPic>img{
+    height: 130px;
+}
+.ExtendPic>i{
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    background-color: rgba(15, 15, 15,.2);
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: -1;
+}
+.ExtendPic:hover i{
+    z-index: 11;
+}
+.serTag{
+    margin-top: 30px;
+    width: 1024px;
+    overflow: hidden;
+    margin-left: 25px;
+}
+.serTag>li{
+    float: left;
+    margin-right: 20px;
+    border-radius: 2px;
+    border: 1px solid rgb(89,161,234);
+    padding: 7px 11px;
+    list-style: none;
+    font-size: 14px;
+    color: rgb(89, 161, 234);
+}
+/*产品*/
+.product,.Case{
+    overflow: hidden;
+}
+/*产品搜索*/
+.shopSearch{
+    width: 562px;
+    height: 42px;
+    margin-bottom: 20px;
+}
+#proButton,#proSearch{
+    float: left;
+}
+#proSearch{
+    height: 40px;
+    width: 470px;
+    border: 1px solid #626262;
+    border-radius: 2px;
+    text-indent: 1em;
+}
+#proButton{
+    width: 90px;
+    height: 42px;
+    background-color: rgb(76,76,76);
+    background-image: -moz-linear-gradient( 95deg, rgb(76,76,76) 0%, rgb(113,113,113) 48%, rgb(149,149,149) 99%);
+    background-image: -webkit-linear-gradient( 95deg, rgb(76,76,76) 0%, rgb(113,113,113) 48%, rgb(149,149,149) 99%);
+    background-image: -ms-linear-gradient( 95deg, rgb(76,76,76) 0%, rgb(113,113,113) 48%, rgb(149,149,149) 99%);
+    -moz-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.29);
+    -o-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.29);
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.29);
+    font-size: 18px;
+    color: #fff;
+}
+#proSearch::placeholder{
+    font-size: 14px;
+    color: rgb(136, 136, 136);
+}
+#proSearch::-webkit-input-placeholder{
+    font-size: 14px;
+    color: rgb(136, 136, 136);
+}
+ #proSearch:-moz-placeholder{
+     font-size: 14px;
+     color: rgb(136, 136, 136);
+ }
+ #proSearch:-ms-input-placeholder{
+     font-size: 14px;
+     color: rgb(136, 136, 136);
+ }
+
+
+
+/*案例&&产品*/
+.CaseList{
+    width: 240px;
+    height: 280px;
+    -moz-box-shadow: 0 0 7.2px 0.8px rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow: 0 0 7.2px 0.8px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 7.2px 0.8px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    float: left;
+    margin-bottom: 20px;
+    margin-right:20px;
+}
+.CaseList:nth-of-type(4n){
+    margin-right:0;
+}
+.CasePic{
+    width: 240px;
+    height:148px;
+    overflow: hidden;
+}
+.CasePic>img{
+    height: 148px;
+}
+.CaseTitle{
+    font-size: 24px;
+    color: rgb(68, 68, 68);
+    margin:15px 0 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.CaseTitle:hover{
+    color: #f39519;
+}
+.CasePrice{
+    font-size: 24px;
+    color: rgb(243, 75, 71);
+    line-height: 23px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 600;
+}
+.CaseStore{
+    font-size: 14px;
+    color: rgb(136, 136, 136);
+    line-height: 23px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.CaseTitle,.CasePrice,.CaseStore{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.CaseLocation{
+    overflow: hidden;
+    margin-left: 16px;
+}
+.CaseLocation>*{
+    float: left;
+    margin-top: 15px;
+}
+.CaseLocation>i{
+    background: url('../img/sprite_shop.png') no-repeat -20px -86px;
+    width: 14px;
+    height: 20px;
+    margin-right: 5px;
+}
+.CaseLocation>span{
+    font-size: 14px;
+    color: rgb(136, 136, 136);
+    line-height: 20px;
+}
+/*分页器*/
+.pagination{
+    margin: 40px auto 84px;
+    width:1200px;
+    height:24px;
+}
+.paginationBar{
+    max-width: 450px;
+    line-height: 24px;
+    font-size: 14px;
+    color: rgb(68, 68, 68);
+    margin: 0 auto;
+    overflow: hidden;
+}
+.paginationPrev,.paginationNext{
+    float: left;
+    cursor: pointer;
+}
+.paginationPrev:hover,.paginationNext:hover{
+    color: rgb(247,151,0);
+}
+.paginationPrev{
+    margin-right: 20px;
+}
+.paginationList>li{
+    float: left;
+    list-style: none;
+    height: 22px;
+    width: 22px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 2px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.paginationList>li:last-child{
+    border-color: transparent;
+    background-color: #f9f9f9;
+    width:25px;
+}
+.paginationList>.paginationActive{
+    background-color: rgb(247,151,0);
+    background-image: -moz-linear-gradient( 95deg, rgb(247,151,0) 0%, rgb(251,188,34) 48%, rgb(255,225,67) 99%);
+    background-image: -webkit-linear-gradient( 95deg, rgb(247,151,0) 0%, rgb(251,188,34) 48%, rgb(255,225,67) 99%);
+    background-image: -ms-linear-gradient( 95deg, rgb(247,151,0) 0%, rgb(251,188,34) 48%, rgb(255,225,67) 99%);
+    color: #fff;
+    border-color: transparent;
+}
+/*资历*/
+.cert{
+    padding: 45px 40px 50px 40px;
+    background-color: #fff;
+    -moz-box-shadow: 0 0 7.2px 0.8px rgba(0, 0, 0, 0.06);
+    -o-box-shadow: 0 0 7.2px 0.8px rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow: 0 0 7.2px 0.8px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 7.2px 0.8px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+
+.ExtendImg{
+    float: left;
+    height: 210px;
+    border-radius: 2px;
+    position: relative;
+    cursor: url('../img/cursor.ico'),auto;
+    -moz-box-shadow: 0 0 11.7px 1.3px rgba(0, 0, 0, 0.14);
+    -o-box-shadow: 0 0 11.7px 1.3px rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 0 0 11.7px 1.3px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 0 11.7px 1.3px rgba(0, 0, 0, 0.14);
+    margin-right: 25px;
+    margin-bottom: 24px;
+}
+.ExtendImg:nth-of-type(3n){
+    margin-right: 0;
+}
+.ExtendImg>img{
+    height: 210px;
+}
+.ExtendImg>i{
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    background-color: rgba(15, 15, 15,.2);
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: -1;
+}
+.ExtendImg:hover i{
+    z-index: 11;
+}
+
+
+
+
+
+
+
+
+
+/*展示大图部分*/
+.mask{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 1111;
+    display: none;
+}
+.mask>img{
+    position: absolute;
+    left: 0;
+    right:0;
+    bottom: 0;
+    top:0;
+    margin: auto;
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer{
+    width: 100%;
+    height: 493px;
+    background-color: #2d3237;
+}
