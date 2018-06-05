@@ -1,20 +1,17 @@
 .baseTitle{
 	position: relative;
 	width: 4rem;
-	height: 0.6rem;
+	height: 0.72rem;
 	margin: 0.4rem auto 0.35rem;
 }
 .baseTitle>*{
 	position: absolute;
-	-webkit-box-shadow: 0px 3px 4px 0px rgba(93, 92, 93, 0.65);
-	-moz-box-shadow: 0px 3px 4px 0px rgba(93, 92, 93, 0.65);
-	        box-shadow: 0px 3px 4px 0px rgba(93, 92, 93, 0.65);
 	border-radius: 2px;
 	bottom: 0;
 }
 .baseTitle>h4{
-	width: 2.5rem;
-  	height: 0.6rem;
+	width: 2.6rem;
+  	height: 0.72rem;
   	left: 0;
   	right: 0;
   	top: 0;
@@ -23,18 +20,22 @@
   	line-height:0.6rem;
   	text-align: center;
   	background-color: #fff;
+  	background-image: url(../img/title_bk1.png);
+  	background-size: cover; 
 }
 .baseTitle>i:first-of-type{
 	width: 0.27rem;
   	height: 0.27rem;
 	right: 0.3rem;
-	background-color: #fff;
+	background-image: url(../img/title_bk2.png);
+  	background-size: cover; 
 }
 .baseTitle>i:nth-of-type(2){
 	width: 0.15rem;
   	height: 0.15rem;
 	right: 0.05rem;
-	background-color: #fff;
+	background-image: url(../img/title_bk2.png);
+  	background-size: cover;
 }
 .baseIntro{
 	font-size: 0.26rem;
@@ -51,6 +52,7 @@
 .baseLists>li{
 	float: left;
 	margin-right: 0.1rem;
+	margin-bottom: 0.3rem;
 }
 .baseLists>li:nth-child(3n){
 	margin-right: 0;
@@ -69,8 +71,9 @@
 }
 .baseList>img:nth-child(2){
 	width: 100%;
-  	height: 1.58rem;
+  	height: 1.6rem;
   	border-radius: 2px;
+  	margin-bottom: 0.15rem;
 }
 .baseList>span{
 	font-size: 0.26rem;
