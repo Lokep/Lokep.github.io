@@ -9,7 +9,7 @@ html,body,.container{
 	color: rgb(68, 68, 68);
 }
 .container{
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 li{
 	list-style: none;
