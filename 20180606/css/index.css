@@ -1,0 +1,32 @@
+.baseTitle {position:relative;width:4rem;height:.72rem;margin:.4rem auto .35rem;}
+.baseTitle>* {position:absolute;border-radius:2px;bottom:0;}
+.baseTitle>h4 {width:2.6rem;height:.72rem;left:0;right:0;top:0;font-size:.36rem;line-height:.6rem;text-align:center;background-color:#fff;background-image:url(../img/title_bk1.png);background-size:cover;margin:auto;}
+.baseTitle>i:first-of-type {width:.27rem;height:.27rem;right:.3rem;background-image:url(../img/title_bk2.png);background-size:cover;}
+.baseTitle>i:nth-of-type(2) {width:.15rem;height:.15rem;right:.05rem;background-image:url(../img/title_bk2.png);background-size:cover;}
+
+.MagazineList{
+	width: 6.9rem;
+	margin:0 auto;
+	overflow: hidden;
+}
+.MagazineList>li{
+	float: left;
+	height: 5.1rem;
+	width: 3.34rem;
+	margin-bottom: 0.3rem;
+}
+.MagazineList>li:nth-child(2n+1){
+	margin-right: 0.2rem;
+}
+.MagazineList img{
+	width: 100%;
+	height: 4.55rem;
+}
+.MagazineList span{
+	font-size: 0.26rem;
+	line-height: 0.5rem;
+}
+.updating{
+	width: 3.3rem;
+	margin:0 auto 0.6rem;
+}
