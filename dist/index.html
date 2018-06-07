@@ -1,0 +1,116 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="maximum-scale=1,minimum-scale=1,user-scalable=0,width=device-width,initial-scale=1"><title>lokep</title><link rel="short icon" href=static/lokep.ico><link rel=icon href=static/lokep.ico><link rel=stylesheet href=src/assets/css/animate.css><style>*{
+    		margin: 0;
+    		padding:0;
+    	}
+    	html,body,#app{
+    		width: 100%;
+    		height: 100%;
+			background-color: #eee;
+    	}
+    	img,input,span,h1,h2,h3,h4,h5,textarea,label,i,a,b{
+			display: block;
+		}
+		img,input,textarea{
+			border: none;
+		}
+		input,textarea{
+			outline: none;
+		}
+		input::placeholder{
+			color: rgb(210,210,210);
+		}
+		input::-moz-placeholder{
+			color: rgb(210,210,210);
+		}
+		input{
+			caret-color:#0084ff;
+			border-radius: 4px;	
+			-webkit-tap-highlight-color:rgba(0,0,0,0);
+			outline: none;
+		}
+		input[type="text"],input[type="password"]{
+			text-indent: 1em;
+		}
+		li{
+			list-style: none;
+		}
+		textarea{
+			resize: none;
+			margin: 0;
+		}
+		i,b{
+			font-style: normal;
+		}
+		a{
+			color: #888;
+			text-decoration: none;
+		}
+		span::selection{
+			background-color: #0084ff;
+		}
+		span::-moz-selection{
+			background-color: #0084ff;
+		}
+		.fl{
+			float: left;
+		}
+		.fr{
+			float: right;
+		}
+		.overFlow{
+			overflow: hidden;
+		}
+		.Ellipsis{
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		.noWrap{
+			overflow: hidden;
+			white-space: nowrap;
+		}
+		.positionCenter{
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			margin:auto;
+		}
+		.ipt:focus{
+			border: 1px solid #3b99fc;
+		    /*-webkit-box-shadow: 0 0 3px 0px #3b99fc;*/
+		    /*-o-box-shadow: 0 0 3px 0px #3b99fc;*/
+		    /*box-shadow: 0 0 3px 0px #3b99fc;     */
+		}
+		.selectColorTransparent::selection{
+			background-color: transparent;
+		}
+		.selectColorTransparent::-moz-selection{
+			background-color: transparent;
+		}
+		.Vertical{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.boxShadow{
+			-o-box-shadow: 0.5px 0.866px 35px 0 rgba(0, 0, 0, 0.21);
+    		-webkit-box-shadow: 0.5px 0.866px 35px 0 rgba(0, 0, 0, 0.21);
+    		box-shadow: 0.5px 0.866px 35px 0 rgba(0, 0, 0, 0.21);
+		}</style><link href=/static/css/app.577fd53741535054ab16eebbbe582774.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.1748317793fd05195ff8.js></script><script type=text/javascript src=/static/js/app.d19e01ee21b9979f1c9a.js></script></body><script>(function (doc, win) {
+	    var docEl = doc.documentElement,
+	        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	        recalc = function () {
+	            var clientWidth = docEl.clientWidth;
+	            if (!clientWidth) return;
+	            if(clientWidth>=640){
+	                docEl.style.fontSize = '100px';
+	            }else{
+	                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+	            }
+	        };
+
+	    if (!doc.addEventListener) return;
+	    win.addEventListener(resizeEvt, recalc, false);
+	    doc.addEventListener('DOMContentLoaded', recalc, false);
+	    console.log(docEl)
+	})(document, window);</script></html>
