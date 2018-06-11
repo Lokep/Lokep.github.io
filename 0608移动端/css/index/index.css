@@ -1,0 +1,183 @@
+.container{
+	overflow: hidden;
+}
+/*首页一级菜单*/
+.firstMenu{
+	width: 100%;
+	height: 2.28rem;
+	position: relative;
+	-webkit-box-shadow: 0 2px 7px 0 rgba(196,196,196,0.50);
+	        box-shadow: 0 2px 7px 0 rgba(196,196,196,0.50);
+}
+.firstMenuLists>li{
+	float: left;
+	width:16.66%;
+	width: -o-calc(100% / 6);
+	width: calc(100% / 6);
+	color: #999;
+}
+.firstMenuLists>.firstMenuActive{
+	color: #F7931C;
+}
+.firstMenuPic{
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-image: url(../../img/index/home_spirit1.png);
+	background-size: 8rem;
+	margin:0.4rem auto 0.2rem;
+	background-repeat: no-repeat;
+}
+.firstMenuLists>li:nth-of-type(1) .firstMenuPic{
+    background-position: -0.4rem -0.4rem;
+
+}
+.firstMenuLists>li:nth-of-type(2) .firstMenuPic{
+    background-position: -1.64rem -0.38rem;
+}
+.firstMenuLists>li:nth-of-type(3) .firstMenuPic{
+    background-position: -2.95rem -0.38rem;
+}
+.firstMenuLists>li:nth-of-type(4) .firstMenuPic{
+    background-position: -4.23rem -0.38rem;
+}
+.firstMenuLists>li:nth-of-type(5) .firstMenuPic{
+    background-position: -5.51rem -0.38rem;
+
+}
+.firstMenuLists>li:nth-of-type(6) .firstMenuPic{
+    background-position: -6.77rem -0.38rem;
+}
+
+.firstMenuTitle{
+	font-size: 13px;
+	line-height: 0.28rem;
+	text-align: center;
+}
+.slipBar{
+	position: absolute;
+	width:16.67%;
+	width: -o-calc(100% / 6);
+	width: calc(100% / 6);
+	height: 0.08rem;
+	bottom: 0;
+	left: 0;
+	background-color: #FCCA13;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FCCA13), to(#F7921C));
+	background-image: linear-gradient(-180deg, #FCCA13 0%, #F7921C 100%);
+	border-radius: 100px;
+	-webkit-transition: left .7s;
+	transition: left .7s;
+}
+/*tabContainer*/
+.tabContainer{
+	width: 100%;
+}
+.tabContent{
+	width: 100%;
+	display: none;
+	float: left;
+}
+
+/*二级菜单*/
+.secondMenu{
+	width: 100%;
+	overflow: hidden;
+	padding:0.4rem 0;
+}
+.secondMenu>li{
+	float: left;
+	padding: 0.1rem;
+	font-size: 14px;
+	color: #666;
+	line-height: 0.28rem;
+	border:1px solid transparent;
+	margin: 0.1rem 0.2rem;
+	border-radius: 40px;
+}
+.secondMenu>.secondMenuActive{
+	color:#F7921C;
+	border:1px solid #F7921C;
+}
+
+/*服务内容*/
+.contentLists{
+	width: 100%;
+}
+.contentList{
+	width: 100%;
+	height: 2.4rem;
+}
+.contentList>img{
+	width: 2.32rem;
+	height: 2.32rem;
+	margin:0.04rem 0;
+}
+.contentList:first-of-type .contentTxt{
+	border-top:1px solid #f4f4f4;
+}
+.contentTxt{
+	width: 4.88rem;
+	height: 2.38rem;
+	border-bottom: 1px solid #f4f4f4; 
+	margin-left: 0.3rem;
+}
+.contentTitle,.contentLocation{
+	width: 4.66rem;
+}
+.contentTitle{
+	font-size: 16px;
+	color: #4A4A4A;
+	line-height: 0.5rem;
+	margin-top: 0.28rem;
+	height: 1rem;
+	margin-bottom: 0.54rem;
+}
+.contentLocation{
+	font-size: 13px;
+	color: #9B9B9B;
+	line-height: 0.4rem;
+}
+.contentLocation>i{
+    background-position: -0.76rem -0.3rem;
+    background-image: url(../../img/common/home_spirit3.png);
+    background-repeat: no-repeat;
+    width: 0.3rem;
+    height: 0.36rem;
+    background-size: 1.3rem;
+    margin-right: 0.05rem;
+    margin-top: -5px;
+}
+
+/*热门推荐*/
+.contentRecommand{
+	width: 100%;
+	height: 1.2rem;
+	background-color: #fff;
+}
+.contentRecommand>h4{
+	text-align: center;
+	line-height: 1.2rem;
+	position: relative;
+	font-size: 16px;
+	color: #4A4A4A;
+}
+.contentRecommand>h4:before{
+	content: '';
+	height: 0.01rem;
+	width: 0.64rem;
+	background-color: #000;
+	position: absolute;
+	left: 2.28rem;
+	top: 0.6rem;
+}
+.contentRecommand>h4:after{
+	content: '';
+	height: 0.01rem;
+	width: 0.64rem;
+	background-color: #000;
+	position: absolute;
+	right: 2.28rem;
+	top: 0.6rem;
+}
+

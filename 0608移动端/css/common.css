@@ -1,0 +1,198 @@
+*{
+	margin: 0;
+	padding:0;
+}
+html,body{
+    height: auto;
+    width: 100%;
+    -webkit-overflow-scrolling: auto;
+}
+a,img,span,input{
+	display: block;
+}
+img {
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    /*设置的tap  A标签的时候出现的黑色高亮*/
+    -webkit-tap-highlight-color: transparent;
+}
+a:active {
+    outline: 0;
+}
+textarea{
+	resize: none;
+}
+input {
+    outline: none;
+}
+
+input[type="text"],input[type="tel"] {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 去除iphone ipad 设备默认按钮样式 */
+input[type="button"],input[type="submit"],input[type="reset"] {
+    -webkit-appearance: none;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+input::-moz-placeholder,textarea::-moz-placeholder {
+    color: #cccccc;
+}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder {
+    color: #cccccc;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+    color: #cccccc;
+}
+li{
+	list-style: none;
+}
+i{
+	font-style: normal;
+	display: block;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.el{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.verticalMiddle{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+
+
+/*dom*/
+.container{
+	width: 100%;
+	height: auto;
+    padding-bottom: 0.96rem;
+}
+
+/*topBar*/
+.topBar{
+	width: 100%;
+	height: 0.9rem;
+	background-image: url(../img/common/slogan.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.citySelect{
+	position: relative;
+}
+.citySelect>div{
+	font-size: 14px;
+	color: #999;
+	line-height: 14px;
+	padding: 0.1rem;
+	border:1px solid #999;
+	border-radius: 4px;	
+	margin-right: .8rem;
+    margin-top: .15rem;
+}
+.citySelect i{
+	background-image: url(../img/common/home_spirit3.png);
+    background-repeat: no-repeat;
+    background-position: -0.8rem -0.8rem;
+    width: 0.3rem;
+    height: 0.15rem;
+    background-size: 2.7rem;
+    margin-left: 0.1rem;
+}
+.cityList{
+	width: 2rem;
+	background-color: #fff;
+	border-radius: 4px;
+	position: absolute;
+	right: 0.2rem;
+	top: 0.8rem;
+	z-index: 11;
+	padding: 0.2rem 0;
+	-webkit-box-shadow: 0 2px 7px 0 rgba(196,196,196,0.50);
+	        box-shadow: 0 2px 7px 0 rgba(196,196,196,0.50);
+	display: none;
+}
+.cityList>li{
+	font-size: 14px;
+	color: #999;
+	line-height: 0.5rem;
+	padding:0 .2rem; 
+	height: 0.5rem;
+}
+.cityList>li:active{
+	background-color: #eee;
+}
+/*footer*/
+.footer{
+	width: 100%;
+	height: 0.96rem;
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin:auto;
+	bottom: 0;
+	z-index: 111;
+	background-color: #fff;
+	-webkit-box-shadow: 0 -2px 4px 0 rgba(229,229,229,0.50);
+	        box-shadow: 0 -2px 4px 0 rgba(229,229,229,0.50);
+}
+.footer>li{
+	float: left;
+	width: 25%;
+}
+.footerLink{
+	width: 100%;
+	height: 100%;
+	color: #444;
+	text-align: center;
+}
+.footerLink>i{
+	width: 0.44rem;
+	height: 0.44rem;
+	margin: 0.1rem auto 0.05rem;
+	background-image: url(../img/common/home_spirit2.png);
+	background-repeat: no-repeat;
+	background-size: 2.3rem;
+}
+.footerLink>span{
+	font-size: 11px;
+	letter-spacing: 0;
+	line-height: 11px;
+}
+.footerLinkActive{
+	color: #F7931C;
+}
+.footer>li:nth-of-type(1) i{
+	background-position: -0.215rem -0.6rem;
+}
+.footer>li:nth-of-type(2) i{
+	background-position: -0.215rem -0.6rem;
+}
+.footer>li:nth-of-type(3) i{
+	background-position: -0.215rem -0.6rem;
+}
+.footer>li:nth-of-type(4) i{
+	background-position: -0.215rem -0.6rem;
+}
+.footer>li:nth-of-type(5) i{
+	background-position: -0.215rem -0.6rem;
+}
+.footer>li:nth-of-type(6) i{
+	background-position: -0.215rem -0.6rem;
+}

@@ -1,0 +1,52 @@
+.businessLists{
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.businessList{
+	width: 7.1rem;
+	margin: 0 auto .2rem;
+	background: #FFFFFF;
+	-webkit-box-shadow: 0 0 5px 0 rgba(222,222,222,0.50), 1px 2px 5px 0 rgba(225,225,225,0.50);
+	        box-shadow: 0 0 5px 0 rgba(222,222,222,0.50), 1px 2px 5px 0 rgba(225,225,225,0.50);
+	border-radius: 2px;
+	overflow: hidden;
+	position: relative;
+}
+.businessList:first-of-type{
+	margin-top: .32rem;
+}
+.businessList>h5{
+	font-size: .3rem;
+	color: #4A4A4A;
+	line-height: .44rem;
+	width: 4.6rem;
+	margin:0.4rem 0 .24rem .3rem;
+}
+.businessBudeget{
+	height: .32rem;
+	font-size: .26rem;
+	color: #FE564F;
+	margin-left: .3rem;
+	margin-bottom: .4rem;
+}
+.businessBudeget>*{
+	vertical-align: top;
+	display: inline-block;
+}
+.businessPrice{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin:auto;
+	right: .3rem;
+	width: 1.3rem;
+	height: .56rem;
+	border-radius: 4px;
+	border:1px solid #F7921C;
+	font-size: .3rem;
+	color: #F7921C;
+	line-height: .56rem;
+	background-color: #fff;
+}
