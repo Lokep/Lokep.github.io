@@ -1,0 +1,115 @@
+.iphone{
+	width: 360px;
+	height: 720px;
+	border: 1px solid #f2f2f2;
+	border-radius: 40px;
+	margin:40px auto;
+	-webkit-box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+.topSpot{
+	margin: 15px auto;
+	width: 160px;
+	height: 30px;
+}
+.spot_1,
+.spot_2,
+.spot_3{
+	border-radius: 10px;
+}
+.spot_1{
+	margin: 0 auto 16px;
+	width: 10px;
+	height: 10px;
+	background-color: #2f2f2f;
+}
+.spot_2,
+.spot_3{
+	float: left;
+}
+.spot_2{
+	width: 12px;
+	height: 12px;
+	background-color: #102b49;
+	margin-left: 18px;
+}
+.spot_3{
+	margin-left: 20px;
+	height: 6px;
+	margin-top: 3px;
+	width: 60px;
+	background-color: #28292b;
+}
+.screen{
+	width: 315px;
+	height: 560px;
+	margin: 35px auto 10px;
+	border-radius: 2px;
+}
+.screen>div{
+	width: 315px;
+	height: 560px;	
+}
+.locked{
+	background-color: #000;
+}
+.live{
+	background-color: #000;
+	background-image: url(../../img/trick/screenPage.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	cursor: pointer;
+}
+.toolBox{
+	position: relative;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 100%;
+	height: 20px;
+	color: #fff;
+}
+.toolBox>*{
+	position: absolute;
+}
+.signature{
+	width: 50px;
+	height: 15px;
+	left: 5px;
+	overflow: hidden;
+	top: 7px;
+}
+.signature>li{
+	width: 6px;
+	height: 6px;
+	background-color: #fff;
+	border-radius: 6px;
+	float: left;
+	margin-left: 1px;
+}
+.chinaUnion{
+	left: 40px;
+	font-size: 13px;
+	top: 2px;
+}
+.spot_4{
+	width: 30px;
+	height: 5px;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.5);
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 7px; 
+}
+
+.home{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin: 0 auto;
+	border:5px solid silver;
+	cursor: pointer;
+}

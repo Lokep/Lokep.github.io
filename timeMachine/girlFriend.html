@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>做我女朋友吧</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<style>
+		.Box{
+			width: 300px;
+			margin: 80px auto 0;
+		}
+		.Box>span{
+			font-size: 20px;
+			text-align: center;
+			line-height: 60px;
+		}
+		.inputBox{
+			width: 300px;
+			height: 37px;
+		}
+		.inputBox input{
+			width: 100px;
+			font-size: 18px;
+			border: 1px solid #f4f4f4;
+			border-radius: 4px;
+		}
+		.inputBox input:first-of-type{
+			float: left;
+		}
+		.inputBox input:last-of-type{
+			float: right;
+		}
+		.fixed{
+			position: fixed;
+			left: 100px;
+			top: 200px;
+			z-index: 1111;
+		}
+	</style>
+	<script src="js/jq.js"></script>
+</head>
+<body>
+	<div class="container">
+
+		<div class="Box">
+			<span>你愿意做我女朋友吗？</span>
+			<div class="inputBox">
+				<input type="button" value="我愿意" class="agree">
+				<input type="button" value="我不愿意" class="refuse">
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$('.refuse').mouseover(function() {
+				var w=$(window).width();
+				var h=$(window).height();
+				var l= w*Math.random()%w;
+				var t= h*Math.random()%h;
+				console.log(l,t);
+				$(this).addClass('fixed');
+				$(this).css({
+					'left':l,
+					'top':t
+				})
+			});
+			$('.agree').click(function(){
+				alert('你好呀，我的小女朋友。');
+			})
+		});
+	</script>
+</body>
+</html>
