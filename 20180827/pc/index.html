@@ -147,10 +147,11 @@
             $('.alert-win').hide();
         });
 
-        var location = window.location.href;
+        var location = window.location.origin;
+        console.log(window.location.origin);
         $('#qrcode').qrcode({
             render: 'canvas',
-            text:location,
+            text:location+'/mobile',
         });
 
         $('.floatWin li:nth-child(4),#qrcode').hover(function() {
