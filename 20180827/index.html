@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="亿蜂是最早做企业服务的B2B交易平台，为中小企业提供一站式服务。提供公司注册,商标注册,营销推广,工商财税,IT服务等各类企业服务，欢迎更多的企业加入！亿蜂，让你的工作简单点儿！">
+    <meta name="keywords" content="企业服务平台,企业服务交易,工商财税代理,商标注册,高新企业技术认定,孵化器">
+    <link rel="short icon" href="http://www.yeebee.com.cn/Content/img/index/yeebee.ico">
+    <link rel="icon" href="http://www.yeebee.com.cn/Content/img/index/yeebee.ico">
+</head>
+<body>
+	<script>
+		var os = function() {
+	    var ua = navigator.userAgent, //获取浏览器UA
+	        isWindowsPhone = /(?:Windows Phone)/.test(ua),
+	        isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
+	        isAndroid = /(?:Android)/.test(ua),
+	        isFireFox = /(?:Firefox)/.test(ua),
+	        isChrome = /(?:Chrome|CriOS)/.test(ua),
+	        isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua)),
+	        isPhone = /(?:iPhone)/.test(ua) && !isTablet,
+	        isPc = !isPhone && !isAndroid && !isSymbian;
+		    return {
+		        isTablet: isTablet,
+		        isPhone: isPhone,
+		        isAndroid : isAndroid,
+		        isPc : isPc
+		    };
+		}();
+		if(os.isPc) { //判断是否PC
+		    window.location.href='pc/index.html';
+		}
+		else if(os.isPhone||os.isAndroid||os.isTablet) {//判断是否iPhone
+		    window.location.href='mobile/index.html';
+		}
+	</script>
+</body>
+</html>

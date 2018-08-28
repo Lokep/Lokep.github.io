@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: "Microsoft YaHei", 微软雅黑, SimHei, "MicrosoftJhengHei", 华文细黑, STHeiti;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    border: 0;
+    outline:none;
+}
+span{
+    display: block;
+}
