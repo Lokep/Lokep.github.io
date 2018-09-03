@@ -58,7 +58,7 @@
 
 <body>
   <div class="container">
-    <a href="javascript:window.location.href='weixin://togo=http://weixin.yeebee.com.cn/Home/BeeLogin/?ticket=t12a18b2b6ac3ca603bfae46bd17b58f1'">wake up</a>
+    <a onclick="copyUrl2();">wake up</a>
     <a href="weixin://">唤醒</a>
 
     <p>
@@ -70,5 +70,13 @@
 	</p>
   </div>
 </body>
+<script>
+	function copyUrl2() {
+	  var Url2 = document.getElementById("biao1");
+	  Url2.select(); // 选择对象
+	  document.execCommand("Copy"); // 执行浏览器复制命令
+	  alert("已复制好，可贴粘。");
+	}
+</script>
 
 </html>
