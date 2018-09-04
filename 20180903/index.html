@@ -40,7 +40,7 @@
     background-color: #f4f4f4;
   }
 
-  a {
+  a,input {
     display: block;
     width: 2rem;
     height: .5rem;
@@ -58,9 +58,11 @@
 
 <body>
   <div class="container">
-    <a id="biao1" onclick="copyUrl2();">wake up</a>
-    <a href="weixin://">唤醒</a>
+    <input id="btn" type="button" value="wake up111">
+    
+    <input type="text" id="txt">
 
+    <a href="weixin://">唤醒</a>
     <p>
     	<a href="weixin://dl/businessWebview/link/?appid=wx6cf766d7fc1ece56&url=http://weixin.yeebee.com.cn/Home/BeeLogin">测试</a>
     </p>
@@ -71,12 +73,22 @@
   </div>
 </body>
 <script>
-	function copyUrl2() {
-	  var Url2 = document.getElementById("biao1");
-	  Url2.select(); // 选择对象
-	  document.execCommand("Copy"); // 执行浏览器复制命令
-	  alert("已复制好，可贴粘。");
-	}
+	window.onload = function(){
+    var btn = document.getElementById('btn');
+    var i = document.getElementById('txt');
+
+    btn.onclick=function(){
+      i.value = btn.value;
+      i.select();
+      var b = document.execCommand("copy");
+      if(b){
+        window.location.href = 'weixin://';
+      }else{
+        alert('error');
+      }
+    }
+  }
+	
 </script>
 
 </html>
