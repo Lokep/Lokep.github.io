@@ -40,7 +40,8 @@
     background-color: #f4f4f4;
   }
 
-  a,input {
+  a,
+  input,#foo1,.btn{
     display: block;
     width: 2rem;
     height: .5rem;
@@ -54,41 +55,55 @@
   }
 
   </style>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+  <script src='./clipboard.min.js'></script>
 </head>
 
 <body>
   <div class="container">
-    <input id="btn" type="button" value="wake up111">
-    
-    <input type="text" id="txt">
-
+    <input id="foo1" value="http://www.shellad.com/_2SP__22（要复制的内容）" readonly="readonly">
+    <div class="the_btn_con">
+      <button class="btn" data-clipboard-target="#foo1">复制</button>
+    </div>
     <a href="weixin://">唤醒</a>
     <p>
-    	<a href="weixin://dl/businessWebview/link/?appid=wx6cf766d7fc1ece56&url=http://weixin.yeebee.com.cn/Home/BeeLogin">测试</a>
+      <a href="weixin://dl/businessWebview/link/?appid=wx6cf766d7fc1ece56&url=http://weixin.yeebee.com.cn/Home/BeeLogin">测试</a>
     </p>
     <p>
-    	<a href="weixin://dl/businessWebview/link/?appid=wx707c5fa91ef0a58c&url=http://http://weixin.yeebee.com.cn/Home/BeeLogin
-		">测试</a>
-	</p>
+      <a href="weixin://dl/businessWebview/link/?appid=wx707c5fa91ef0a58c&url=http://http://weixin.yeebee.com.cn/Home/BeeLogin
+    ">测试</a>
+    </p>
   </div>
 </body>
-<script>
-	window.onload = function(){
-    var btn = document.getElementById('btn');
-    var i = document.getElementById('txt');
 
-    btn.onclick=function(){
-      i.value = btn.value;
-      i.select();
-      var b = document.execCommand("copy");
-      if(b){
-        window.location.href = 'weixin://';
-      }else{
-        alert(b);
-      }
-    }
-  }
-	
+<script>
+window.onload = function() {
+  // var btn = document.getElementById('btn');
+  // var i = document.getElementById('txt');
+
+  // btn.onclick = function() {
+  //   i.value = btn.value;
+  //   i.select();
+  //   var b = document.execCommand("copy");
+  //   if (b) {
+  //     window.location.href = 'weixin://';
+  //   } else {
+  //     alert(b);
+  //   }
+  // }
+
+  var clipboard = new ClipboardJS('.btn');
+  //优雅降级:safari 版本号>=10,提示复制成功;否则提示需在文字选中后，手动选择“拷贝”进行复制
+  clipboard.on('success', function(e) {
+    alert('复制成功!')
+    e.clearSelection();
+    window.location.href = 'weixin://';
+  });
+  clipboard.on('error', function(e) {
+    alert('请选择“拷贝”进行复制!')
+  });
+}
+
 </script>
 
 </html>
