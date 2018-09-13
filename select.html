@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<title>select</title>
+	<script>
+		(function (doc, win) {
+		    var docEl = doc.documentElement,
+		        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		        recalc = function () {
+		            var clientWidth = docEl.clientWidth;
+		            if (!clientWidth) return;
+		            if(clientWidth>=640){
+		                docEl.style.fontSize = '100px';
+		            }else{
+		                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+		            }
+		        };
+
+		    if (!doc.addEventListener) return;
+		    win.addEventListener(resizeEvt, recalc, false);
+		    doc.addEventListener('DOMContentLoaded', recalc, false);
+		    console.log(docEl)
+		})(document, window);
+	</script>
+	<style>
+		*{
+			margin: 0;
+			padding:0;
+		}
+		select{
+			display: block;
+			-webkit-appearance:none;
+			background-color: #fff;
+			border-radius: 4px;
+			width: 2rem;
+			height: .4rem;
+			margin: 2rem auto;
+			border: 1px solid #999;
+		}
+	</style>
+</head>
+<body>
+	<select>
+		<option value="111">111</option>
+		<option value="111">111</option>
+		<option value="111">111</option>
+		<option value="111">111</option>
+		<option value="111">111</option>
+	</select>
+</body>
+</html>
