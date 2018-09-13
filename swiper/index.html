@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <title></title>
+  <script>
+  (function(doc, win) {
+    var docEl = doc.documentElement,
+      resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+      recalc = function() {
+        var clientWidth = docEl.clientWidth;
+        if (!clientWidth) return;
+        if (clientWidth >= 640) {
+          docEl.style.fontSize = '100px';
+        } else {
+          docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        }
+      };
+
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+    console.log(docEl)
+  })(document, window);
+
+  </script>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <style>
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+.container{
+	overflow: hidden;
+    background-color: pink;
+    width: 100%;
+    height: 100%;
+}
+  .content {
+    width: 100%;
+    height: 7rem;
+    background-color: pink;
+    margin: 2rem auto;
+    overflow: hidden;
+  }
+
+  .box {
+    width: 600%;
+    height: 7rem;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+	.lists{
+		width: 100%;
+		height: 7rem;
+	}
+	.list{
+		width: 100%;
+		height: 2rem;
+		margin-bottom: .5rem;
+		display: block;
+		background-color: #fff;
+		border-radius: 8px;
+		-webkit-box-shadow: 0.5px 0.866px 35px 0 rgba(0, 0, 0, 0.21);
+    	box-shadow: 0.5px 0.866px 35px 0 rgba(0, 0, 0, 0.21);
+    	overflow: hidden;
+	}
+	.swiper-slide>.list:last-of-type{
+		margin-bottom: 0;
+	}
+	.list-top{
+		font-size: .4rem;
+		margin: .4rem auto .2rem;
+		width:2rem;
+		padding-left: .5rem;
+		background-image: url(tuanduijianshe.png);
+		background-repeat: no-repeat;
+		background-size: .5rem;
+		background-position: .1rem .1rem;
+	}
+	.list-bottom{
+		font-size:.25rem; 
+	}
+	.list-bottom>i{
+		display: inline-block;
+		vertical-align: top;
+		color: red;
+		font-style: normal;
+		margin: 0 .1rem;
+	}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="box">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+				<div class="lists">
+					<div class="list">
+						<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+					</div>
+	            	<div class="list">
+	            		<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+	            	</div>
+	            	<div class="list">
+	            		<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+	            	</div>
+				</div>            	
+            </div>
+            <div class="swiper-slide">
+				<div class="lists">
+					<div class="list">
+						<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+					</div>
+	            	<div class="list">
+	            		<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+	            	</div>
+	            	<div class="list">
+	            		<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+	            	</div>
+				</div>    
+            </div>
+            <div class="swiper-slide">
+				<div class="lists">
+					<div class="list">
+						<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+					</div>
+	            	<div class="list">
+	            		<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+	            	</div>
+	            	<div class="list">
+	            		<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+	            	</div>
+				</div>   
+            </div>
+            <div class="swiper-slide">
+            	<div class="lists">
+					<div class="list">
+						<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+					</div>
+	            	<div class="list">
+	            		<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+	            	</div>
+	            	<div class="list">
+	            		<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+	            	</div>
+				</div>              
+			</div>
+            <div class="swiper-slide">
+            	<div class="lists">
+					<div class="list">
+						<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+					</div>
+	            	<div class="list">
+	            		<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+	            	</div>
+	            	<div class="list">
+	            		<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+	            	</div>
+				</div>    
+            </div>
+            <div class="swiper-slide">
+				<div class="lists">
+					<div class="list">
+						<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+					</div>
+	            	<div class="list">
+	            		<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+	            	</div>
+	            	<div class="list">
+	            		<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+	            	</div>
+				</div>   
+            </div>
+            <div class="swiper-slide">
+            	<div class="lists">
+					<div class="list">
+						<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+					</div>
+	            	<div class="list">
+	            		<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+	            	</div>
+	            	<div class="list">
+	            		<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+	            	</div>
+				</div>   
+            </div>
+            <div class="swiper-slide">
+            	<div class="lists">
+					<div class="list">
+						<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+					</div>
+	            	<div class="list">
+	            		<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+	            	</div>
+	            	<div class="list">
+	            		<h4 class="list-top">团队建设</h4>
+						<div class="list-bottom">日成单量<i>10个</i>，平均返现<i>200元</i></div>
+	            	</div>
+				</div>    
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/swiper.min.js"></script>
+  <script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 2.5,
+    width: 600,
+    spaceBetween: 30,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+
+  </script>
+</body>
+
+</html>
