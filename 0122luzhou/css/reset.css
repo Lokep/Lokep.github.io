@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+html,
+body,
+.container {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+}
+
+input,
+span,
+img,
+textarea {
+    display: block;
+    border: none;
+    outline: none;
+}

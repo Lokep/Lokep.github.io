@@ -1,0 +1,16 @@
+.container {
+    background-color: #F5F5F5;
+}
+
+.menubar,
+.navbar,
+.banner,
+.list,
+.service,
+.buy,
+.appreciate,
+.news,
+.why {
+    width: 1200px;
+    margin: 0 auto;
+}
